@@ -7,7 +7,36 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="./assets/image/spark.ico" type="image/x-icon">
     <title>Spark Technologies</title>
+    <style>
+        #preloader {
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                position: fixed;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 9999;
+                background: url("assets/image/spark_logo_main.png") center no-repeat #f3f3f3;
+                background-size: cover;
+            }
+    </style>
+    <div id="preload">
+        <div id="preloader" style="color:orange;">Loading...</div>
+    </div>
 
+    <script>
+        function onLoadComplete(elementToFade) {
+            var element = document.getElementById(elementToFade);
+            var prelaod = document.getElementById("preload");
+            preload.innerHTML = ``
+        }
+
+        window.onload = function () {
+            onLoadComplete("preloader")
+        }
+    </script>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
