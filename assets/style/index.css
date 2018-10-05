@@ -4,9 +4,14 @@
     border: 0;
     outline: 0;
 
-
 }
 
+html {
+    max-width: 100vw;
+    overflow-x: hidden;
+
+
+}
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -20,7 +25,7 @@ body {
 .section {
     min-height: 100vh;
     min-width: 100vw;
-    overflow: hidden;
+    /* overflow: hidden; */
     transition: all 1s;
 }
 
@@ -36,10 +41,11 @@ header {
     min-height: 60px;
     max-height: 60px;
     max-width: 100vw;
-    overflow: hidden;
+    /* overflow: hidden; */
     padding: 15px 30px 20px 30px;
     background: transparent;
     position: fixed;
+    z-index: 99999;
 }
 
 header::before {
@@ -47,7 +53,7 @@ header::before {
     position: absolute;
     top: 0;
     left: 0;
-    min-height: 100px;
+    min-height: 60px;
     min-width: 100vw;
     background-color: #f3f3f3;
     opacity: 0.40;
@@ -68,11 +74,16 @@ header ul {
     font-weight: bold;
 }
 
-header ul li:nth-child(1) {
+/* header ul li:nth-child(1) {
     border-bottom: 3px solid black;
     border-radius: 3px;
-}
+} */
 
+
+.service-blocks {
+    height: 160px;
+    z-index: -99999;
+}
 
 header ul li {
     display: inline-block;
@@ -104,16 +115,12 @@ header ul li {
     padding: 60vh 250px 0px 250px;
     font-size: 20px;
     font-weight: 500;
-    
+
 }
 
 /* block-1 ends */
 
 
-
-
-
-/* block-2 starts */
-
-
-/* block-2 ends */
+#map-box {
+    height: 350px;
+}
