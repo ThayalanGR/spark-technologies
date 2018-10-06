@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="./assets/image/spark.ico" type="image/x-icon">
     <title>Spark Technologies</title>
-
     <!-- preloader block start -->
     <style>
         #preloader {
@@ -56,50 +55,90 @@
 <body>
 
 
-    <header>
+    <nav class="navbar bg-transparent navbar-expand-lg navbar-light fixed-top ">
+        <a class="navbar-brand" href="#">
+            <img src="./assets/image/logo.png" height="30" alt="mdb logo">
+            <span class="font-weight-bold text-warning pl-1">Spark<span class="font-weight-bold black-text ">Zeon</span>
+            </span><span class="text-primary blue-text font-weight-bold">Technologies</span>
+        </a>
+        <button class="navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNavDropdown"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse scrollspy d-flex-md justify-content-end" id="navbarNav">
+            <ul class="smooth-scroll nav nav-pills nav-fill ">
+                <li class="nav-item"><a class="nav-link active " href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link " href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link " href="#technologies">Technologies</a></li>
+                <li class="nav-item"><a class="nav-link " href="#projects">Our
+                        Projects</a></li>
+                <li class="nav-item"><a class="nav-link " href="#aboutus">About us</a></li>
+                <li class="nav-item"><a class="nav-link " href="#contactus">Contact
+                        us</a></li>
+                <li class="nav-item"><a class="nav-link " href="#" data-toggle="modal" data-target="#modalContactForm">Career
+                        with us</a></li>
+            </ul>
+
+        </div>
+
+    </nav>
+
+
+    <!-- <header>
         <div class="logo" style="font-size: 20px;">
             <img src="./assets/image/logo.png" alt="Spark Technologies"><span class="font-weight-bold text-warning pl-3">Spark<span
                     class="font-weight-bold black-text ">Zeon</span>
             </span><span class="text-primary blue-text font-weight-bold">Technologies</span>
         </div>
-        <div class="scrollspy">
-            <ul class="smooth-scroll nav nav-tabs">
+        <div class="scrollspy ">
+
+            <ul class="smooth-scroll nav nav-tabs ">
                 <li class="nav-item"><a class="nav-link active" href="#home" style="text-decoration: none;">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="#services" style="text-decoration: none;">Services</a></li>
                 <li class="nav-item"><a class="nav-link" href="#technologies" style="text-decoration: none;">Technologies</a></li>
-                <li class="nav-item"><a class="nav-link" href="#projects" style="text-decoration: none;">Our Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects" style="text-decoration: none;">Our
+                        Projects</a></li>
                 <li class="nav-item"><a class="nav-link" href="#aboutus" style="text-decoration: none;">About us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contactus" style="text-decoration: none;">Contact
+                        us</a></li>
                 <li class="nav-item"><a class="nav-link" href="#" style="text-decoration: none;" data-toggle="modal"
                         data-target="#modalContactForm">Career
                         with us</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contactus" style="text-decoration: none;">Contact us</a></li>
             </ul>
         </div>
-    </header>
+    </header> -->
 
 
     <section class="section block-1" id="home">
-        <section class="block-1-content">
-            <div class="block-1-image-desc">
-                <p>
-                    <b>Sparkzeon Technologies</b> is an Indian R&D company that
-                    provides technology based on research and development,
-                    IT services, software development, support,
-                    maintenance and services, data analytics, web designing
-                    and hosting, digital technology, educational services
-                    and support, consulting,
-                    data processing, and operations services.
+        <div class="container">
+            <div class="row">
+                <div class="col mt-5 pt-5 text-center font-weight-normal d-flex justify-content-center align-items-center flex-column ">
+                    <div class=" mt-md-5 pt-md-5">
+                        <img src="./design/Artboard 1 copy.png" class="img-handler img-fluid" alt="">
 
-                </p>
+                    </div>
+                    <div>
+                        <p class="pt-4 font-weight-light text-warning h5-responsive" >
+                            <b class="text-primary">Sparkzeon Technologies</b> is an Indian R&D company that
+                            provides technology based on research and development,
+                            IT services, software development, support,
+                            maintenance and services, data analytics, web designing
+                            and hosting, digital technology, educational services
+                            and support, consulting,
+                            data processing, and operations services.
 
+                        </p>
+                    </div>
+
+                </div>
 
             </div>
+        </div>
 
-        </section>
     </section>
 
     <section class="section block-2" id="services">
-        <div class="container-fluid mt-5 pt-4 ml-3 mr-3">
+        <div class="container mt-5 pt-4">
             <div class="row  mt-5 ">
                 <div class="col text-center text-warning " style="z-index: -9999;">
                     <h3 class="font-weight-normal"> Our Services</h3>
@@ -108,8 +147,8 @@
                 </div>
             </div>
             <div class="row pl-5 pr-5 d-flex justify-content-center ">
-                <div class="col-md-2 ml-2 mr-2 mb-5 service-blocks shadow p-0">
-                    <div class="view">
+                <div class="col-md-2 ml-2 mr-2 mb-5 service-blocks shadow p-0 rounded">
+                    <div class="view rounded">
                         <img src="http://www.mitsubishielectric.co.jp/corporate/tech/images/index/thumb_01.jpg" class="img-fluid"
                             style="height: 160px; width: 100%;" alt="placeholder">
                         <div class="mask flex-center waves-effect waves-light rgba-teal-strong">
@@ -117,8 +156,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2 ml-2 mr-2 mb-5 service-blocks shadow p-0">
-                    <div class="view">
+                <div class="col-md-2 ml-2 mr-2 mb-5 service-blocks shadow p-0 rounded">
+                    <div class="view rounded">
                         <img src="https://www.thenewtek.com/wp-content/uploads/2018/03/b3.jpg" class="img-fluid" style="height: 160px; width: 100%;"
                             alt="placeholder">
                         <div class="mask flex-center waves-effect waves-light rgba-teal-strong">
@@ -126,8 +165,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2 ml-2 mr-2 mb-5 service-blocks shadow p-0">
-                    <div class="view">
+                <div class="col-md-2 ml-2 mr-2 mb-5 service-blocks shadow p-0 rounded">
+                    <div class="view rounded">
                         <img src="http://5.imimg.com/data5/HI/IN/GLADMIN-36620385/maintenance-support-service-500x500.png"
                             class="img-fluid" style="height: 160px; width: 100%;" alt="placeholder">
                         <div class="mask flex-center waves-effect waves-light rgba-teal-strong">
@@ -135,8 +174,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2 ml-2 mr-2 mb-5 service-blocks shadow p-0">
-                    <div class="view">
+                <div class="col-md-2 ml-2 mr-2 mb-5 service-blocks shadow p-0 rounded">
+                    <div class="view rounded">
                         <img src="https://www.cygnet-infotech.com/media/581723/transforming-enterprise-decision-making-with-big-data-analytics.jpg"
                             class="img-fluid" style="height: 160px; width: 100%;" alt="placeholder">
                         <div class="mask flex-center waves-effect waves-light rgba-teal-strong">
@@ -144,8 +183,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2 ml-2 mr-2 mb-5 service-blocks shadow p-0">
-                    <div class="view">
+                <div class="col-md-2 ml-2 mr-2 mb-5 service-blocks shadow p-0 rounded">
+                    <div class="view rounded">
                         <img src="https://www.webdesignandhosting.net.au/wp-content/uploads/2018/07/Web-Design-and-Hosting-Perth-Small-640x544-Logo1.png"
                             class="img-fluid" style="height: 160px; width: 100%;" alt="placeholder">
                         <div class="mask flex-center waves-effect waves-light rgba-teal-strong">
@@ -153,8 +192,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2 ml-2 mr-2 mb-5 service-blocks shadow p-0">
-                    <div class="view">
+                <div class="col-md-2 ml-2 mr-2 mb-5 service-blocks shadow p-0 rounded">
+                    <div class="view rounded">
                         <img src="https://www.corelynx.com/sites/default/files/technologies/mobile-application.png"
                             class="img-fluid" style="height: 160px; width: 100%;" alt="placeholder">
                         <div class="mask flex-center waves-effect waves-light rgba-teal-strong">
@@ -162,8 +201,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2 ml-2 mr-2 mb-5 service-blocks shadow p-0">
-                    <div class="view">
+                <div class="col-md-2 ml-2 mr-2 mb-5 service-blocks shadow p-0 rounded">
+                    <div class="view rounded">
                         <img src="https://pastexplore.files.wordpress.com/2013/04/big-data.jpg" class="img-fluid" style="height: 160px; width: 100%;"
                             alt="placeholder">
                         <div class="mask flex-center waves-effect waves-light rgba-teal-strong">
@@ -171,8 +210,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2 ml-2 mr-2 mb-5 service-blocks shadow p-0">
-                    <div class="view">
+                <div class="col-md-2 ml-2 mr-2 mb-5 service-blocks shadow p-0 rounded">
+                    <div class="view rounded">
                         <img src="https://www.whitworth.edu/cms/media/whitworth/images/administration/educational-support-services/educational-support-services-hero-image.jpg"
                             class="img-fluid" style="height: 160px; width: 100%;" alt="placeholder">
                         <div class="mask flex-center waves-effect waves-light rgba-teal-strong">
@@ -180,8 +219,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2 ml-2 mr-2 mb-5 service-blocks shadow p-0">
-                    <div class="view">
+                <div class="col-md-2 ml-2 mr-2 mb-5 service-blocks shadow p-0 rounded">
+                    <div class="view rounded">
                         <img src="https://businessfirstfamily.com/wp-content/uploads/2017/02/business-consulting-service.jpg"
                             class="img-fluid" style="height: 160px; width: 100%;" alt="placeholder">
                         <div class="mask flex-center waves-effect waves-light rgba-teal-strong">
@@ -189,8 +228,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2 ml-2 mr-2 mb-5 service-blocks shadow p-0">
-                    <div class="view">
+                <div class="col-md-2 ml-2 mr-2 mb-5 service-blocks shadow p-0 rounded">
+                    <div class="view rounded">
                         <img src="http://itiviatechnologies.com/wp-content/uploads/2016/03/outsourcing-data-processing-825x340.jpg"
                             class="img-fluid" style="height: 160px; width: 100%;" alt="placeholder">
                         <div class="mask flex-center waves-effect waves-light rgba-teal-strong">
@@ -198,8 +237,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2 ml-2 mr-2 mb-5 service-blocks shadow p-0">
-                    <div class="view">
+                <div class="col-md-2 ml-2 mr-2 mb-5 service-blocks shadow p-0 rounded">
+                    <div class="view rounded">
                         <img src="https://imjustcreative.com/wp-content/uploads/2014/06/Logo-Design-Copyright.jpg"
                             class="img-fluid" style="height: 160px; width: 100%;" alt="placeholder">
                         <div class="mask flex-center waves-effect waves-light rgba-teal-strong">
@@ -275,25 +314,25 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6 text-primary h5">
-                    <i class="fas fa-bullseye text-danger mr-2"></i>
+                <div class="col-md-6 col-sm-12 text-primary h5-responsive">
+                    <i class="fas fa-bullseye text-danger text-center-sm mr-md-2"></i>
                     Trust for Social Welfare and Rehabilitation Centre <br> <br> <br>
-                    <i class="fas fa-bullseye text-danger mr-2"></i>
+                    <i class="fas fa-bullseye text-danger mr-md-2"></i>
                     Vidiyal Liberated Trust. <br> <br> <br>
-                    <i class="fas fa-bullseye text-danger mr-2"></i>
+                    <i class="fas fa-bullseye text-danger mr-md-2"></i>
                     Poovanam Trust. <br> <br> <br>
-                    <i class="fas fa-bullseye text-danger mr-2"></i>
+                    <i class="fas fa-bullseye text-danger mr-md-2"></i>
                     Aron Matrimony. <br> <br> <br>
-                    <i class="fas fa-bullseye text-danger mr-2"></i>
+                    <i class="fas fa-bullseye text-danger mr-md-2"></i>
                     Arul Garments. <br><br> <br>
-                    <i class="fas fa-bullseye text-danger mr-2"></i>
+                    <i class="fas fa-bullseye text-danger mr-md-2"></i>
                     Mother Teresa Health Centre Management System. <br><br> <br>
-                    <i class="fas fa-bullseye text-danger mr-2"></i>
+                    <i class="fas fa-bullseye text-danger mr-md-2"></i>
                     Construction Company. <br><br> <br>
-                    <i class="fas fa-bullseye text-danger mr-2"></i>
+                    <i class="fas fa-bullseye text-danger mr-md-2"></i>
                     Sankara Nethralaya Research Foundation. <br>
                 </div>
-                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                <div class="col-md-6  " id="project-hide">
                     <i class="fas fa-project-diagram fa-6x text-primary" style="font-size: 400px; opacity:0.5; text-shadow: grey;"></i>
                 </div>
                 <div class="col">
@@ -581,7 +620,7 @@
 
     <section id="contactus" class="section block-6 mt-5 pt-4" style="position: relative;">
 
-        <div class="container mt-5">
+        <div class="container-fluid mt-5">
             <div class="row ">
                 <div class="col text-primary text-center h3-responsive font-weight-normal">
                     Contact us
@@ -589,8 +628,46 @@
                 </div>
             </div>
             <div class="row p-4">
-                <div class="col-md-6 text-primary">
-                    <div class="row mb-5">
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col rounded shadow-lg m-2">
+                            <div class="row">
+                                <div class="col text-center text-warning m-1 h5-responsive font-weight-normal">
+                                    Leave a message
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="md-form form-sm">
+                                <i class="fa fa-user prefix"></i>
+                                <input type="text" id="leave-name" class="form-control form-control-sm">
+                                <label for="leave-name">Your name</label>
+                            </div>
+                            <div class="md-form form-sm">
+                                <i class="fa fa-user prefix"></i>
+                                <input type="text" id="leave-email" class="form-control form-control-sm">
+                                <label for="leave-email">Email</label>
+                            </div>
+                            <div class="md-form form-sm">
+                                <i class="fa fa-user prefix"></i>
+                                <input type="text" id="leave-organisation" class="form-control form-control-sm">
+                                <label for="leave-organisation">Organisation</label>
+                            </div>
+                            <div class="md-form form-sm">
+                                <i class="fa fa-user prefix"></i>
+                                <input type="text" id="leave-location" class="form-control form-control-sm">
+                                <label for="leave-location">Location</label>
+                            </div>
+                            <div class="md-form form-sm">
+                                <!-- <i class="fas fa-map-marker-alt prefix"></i> -->
+                                <i class="fas fa-comment prefix"></i>
+                                <textarea type="text" id="leave-message" class="md-textarea form-control"></textarea>
+                                <label for="leave-message">Message</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-primary">
+                    <div class="row mb-4 mt-5">
                         <div class="col-1 offset-2">
                             <i class="fas fa-globe-americas text-primary fa-2x "></i>
                         </div>
@@ -598,7 +675,7 @@
                             <a href="http://www.sparkzeon.com">www.sparkzeon.com</a>
                         </div>
                     </div>
-                    <div class="row mt-2 mb-5">
+                    <div class="row mt-2 mb-4">
                         <div class="col-1 offset-2">
                             <i class="fas fa-envelope red-text fa-2x "></i>
                         </div>
@@ -606,7 +683,7 @@
                             info@sparkzeon.com
                         </div>
                     </div>
-                    <div class="row mt-2 mb-5">
+                    <div class="row mt-2 mb-3">
                         <div class="col-1 offset-2">
                             <i class="fab fa-whatsapp text-success fa-2x "></i>
                         </div>
@@ -614,7 +691,7 @@
                             +91 96 77 81 82 82
                         </div>
                     </div>
-                    <div class="row mt-2 mb-5">
+                    <div class="row mt-2 mb-4">
                         <div class="col-1 offset-2">
                             <i class="fas fa-phone fa-2x "></i>
                         </div>
@@ -622,7 +699,7 @@
                             +91 96 77 81 82 82
                         </div>
                     </div>
-                    <div class="row mt-2 mb-5">
+                    <div class="row mt-2 mb-4">
                         <div class="col-1 offset-2">
                             <i class="fas fa-map-marker-alt fa-2x "></i>
                         </div>
@@ -649,7 +726,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-4 mb-5 mt-3">
                     <div class="row">
                         <div class="col text-center text-primary h5-responsive font-weight-normal">
                             Location
@@ -661,6 +738,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
 
@@ -675,113 +753,179 @@
     <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
         aria-hidden="true">
         <!--Modal: Contact form-->
-        <div class="modal-dialog cascading-modal" role="document">
+        <form action="" name="career-form" id="career-form">
+            <div class="modal-dialog cascading-modal" role="document">
 
-            <!--Content-->
-            <div class="modal-content">
+                <!--Content-->
+                <div class="modal-content">
 
-                <!--Header-->
-                <div class="modal-header primary-color white-text">
-                    <h4 class="title">
-                        <i class="fa fa-pencil"></i> Career with us</h4>
-                    <button type="button" class="close waves-effect waves-light" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <!--Body-->
-                <div class="modal-body">
-
-                    <!-- Material input name -->
-                    <div class="md-form form-sm">
-                        <i class="fa fa-user prefix"></i>
-                        <input type="text" id="uname" class="form-control form-control-sm">
-                        <label for="uname">Your name</label>
+                    <!--Header-->
+                    <div class="modal-header primary-color white-text">
+                        <h4 class="title">
+                            <i class="fa fa-pencil"></i> Career with us</h4>
+                        <button type="button" class="close waves-effect waves-light" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
                     </div>
-                    <div class="md-form form-sm">
-                        <i class="fa fa-user prefix"></i>
-                        <input type="text" id="mname" class="form-control form-control-sm">
-                        <label for="mname">Mother name</label>
-                    </div>
-                    <div class="md-form form-sm">
-                        <i class="fa fa-user prefix"></i>
-                        <input type="text" id="fname" class="form-control form-control-sm">
-                        <label for="fnamesa">Fathert name</label>
-                    </div>
+                    <!--Body-->
+                    <div class="modal-body">
 
-                    <div class="md-form form-sm">
-                        <h6 class="font-weight-bold" style="display: inline;">Sex : &nbsp; </h6>
-                        <i class="fas fa-male fa-2x"></i> 
-                        <input type="radio" name="gender" value="male" id="male-gender">
-                        <i class="fas fa-female fa-2x"></i>
-                        <input type="radio" name="gender" value="female" id="female-gender">
-                        <i class="fas fa-transgender-alt fa-2x"></i>                  
-                        <input type="radio" name="gender" value="others" id="others-gender">
+                        <!-- Material input name -->
+                        <div class="md-form form-sm">
+                            <i class="fa fa-user prefix"></i>
+                            <input type="text" id="uname" class="form-control form-control-sm">
+                            <label for="uname">Your name</label>
+                        </div>
+                        <div class="md-form form-sm">
+                            <i class="fa fa-user prefix"></i>
+                            <input type="text" id="mname" class="form-control form-control-sm">
+                            <label for="mname">Mother name</label>
+                        </div>
+                        <div class="md-form form-sm">
+                            <i class="fa fa-user prefix"></i>
+                            <input type="text" id="fname" class="form-control form-control-sm">
+                            <label for="fname">Fathert name</label>
+                        </div>
 
-                    </div>
+                        <div class="md-form form-sm">
+                            <h6 class="font-weight-bold" style="display: inline;">Sex : &nbsp; </h6>
+                            <i class="fas fa-male fa-1x"></i>
+                            <input type="radio" name="gender" value="male" id="male-gender">
+                            <i class="fas fa-female fa-1x"></i>
+                            <input type="radio" name="gender" value="female" id="female-gender">
+                            <i class="fas fa-transgender-alt fa-1x"></i>
+                            <input type="radio" name="gender" value="others" id="others-gender">
 
-                    
-                    <div class="md-form form-sm">
-                        <i class="fas fa-calendar-alt prefix"></i>
-                        <input type="date" id="dob" class="form-control form-control-sm">
-                    </div>
+                        </div>
 
-                    <div class="md-form form-sm">
+
+                        <div class="md-form form-sm">
+                            <i class="fas fa-calendar-alt prefix"></i>
+                            <input type="date" id="dob" class="form-control form-control-sm ">
+                        </div>
+
+                        <div class="md-form form-sm">
                             <i class="fas fa-church prefix"></i>
                             <input type="text" id="relegion" class="form-control form-control-sm">
                             <label for="relegion">Relegion</label>
                         </div>
                         <div class="md-form form-sm">
-                                <i class="fas fa-theater-masks prefix"></i>
-                                <input type="text" id="community" class="form-control form-control-sm">
-                                <label for="community">Community</label>
+                            <i class="fas fa-theater-masks prefix"></i>
+                            <input type="text" id="community" class="form-control form-control-sm">
+                            <label for="community">Community</label>
+                        </div>
+
+                        <div class="md-form form-sm">
+                            <i class="fas fa-dove"></i>
+                            <h6 class="font-weight-bold" style="display: inline;">Marital Status : &nbsp; </h6>
+                            <span>single</span>
+                            <input type="radio" name="marital" value="single" id="marital">
+                            <span>Married</span>
+                            <input type="radio" name="marital" value="married" id="marital">
+                            <span>widowed</span>
+                            <input type="radio" name="marital" value="widowed" id="marital">
+                            <span>widower</span>
+                            <input type="radio" name="marital" value="widower" id="marital">
+                            <span>others</span>
+                            <input type="radio" name="marital" value="others" id="marital">
+
+                        </div>
+                        <div class="md-form form-sm">
+                            <i class="fas fa-tint prefix"></i>
+                            <!-- <i class="fa fa-lock prefix"></i> -->
+                            <input type="text" id="blood" class="form-control form-control-sm">
+                            <label for="blood">Blood Group</label>
+                        </div>
+                        <div class="md-form form-sm">
+                            <i class="fas fa-graduation-cap prefix"></i>
+                            <!-- <i class="fa fa-lock prefix"></i> -->
+                            <input type="text" id="education" class="form-control form-control-sm">
+                            <label for="education">Educational Qualification</label>
+                        </div>
+                        <div class="md-form form-sm">
+                            <i class="fas fa-user-md prefix"></i>
+                            <!-- <i class="fa fa-lock prefix"></i> -->
+                            <input type="text" id="occupation" class="form-control form-control-sm">
+                            <label for="occupation">Occupation</label>
+                        </div>
+                        <div class="md-form form-sm">
+                            <i class="fas fa-phone prefix"></i>
+                            <!-- <i class="fa fa-lock prefix"></i> -->
+                            <input type="number" id="mobile2" class="form-control form-control-sm">
+                            <label for="mobile2">Conatact number 1/ Home</label>
+                        </div>
+                        <div class="md-form form-sm">
+                            <i class="fas fa-phone prefix"></i>
+                            <!-- <i class="fa fa-lock prefix"></i> -->
+                            <input type="number" id="mobile1" class="form-control form-control-sm">
+                            <label for="mobile1">Conatact number 2/ Office</label>
+                        </div>
+                        <div class="md-form form-sm">
+                            <i class="far fa-envelope-open prefix"></i>
+                            <!-- <i class="fa fa-lock prefix"></i> -->
+                            <input type="email" id="email" class="form-control form-control-sm">
+                            <label for="email">Your email</label>
+                        </div>
+                        <span class="font-weight-normal"> <i class="far fa-address-card font-weight-bold fa-1x"></i>
+                            &nbsp;Contact Address : </span>
+                        <div class="md-form form-sm">
+                            <!-- <i class="fa fa-pencil prefix"></i> -->
+                            <i class="fas fa-map-marker-alt prefix"></i>
+                            <textarea type="text" id="address-text" class="md-textarea form-control"></textarea>
+                            <label for="address-text">Door no, street, Road, town..</label>
+                        </div>
+                        <div class="md-form form-sm">
+                            <!-- <i class="fa fa-lock prefix"></i> -->
+                            <i class="fas fa-map-marker-alt prefix"></i>
+
+                            <input type="email" id="district" class="form-control form-control-sm">
+                            <label for="district">District</label>
+                        </div>
+                        <div class="md-form form-sm">
+                            <!-- <i class="fa fa-lock prefix"></i> -->
+                            <i class="fas fa-map-marker-alt prefix"></i>
+
+                            <input type="text" id="state" class="form-control form-control-sm">
+                            <label for="state">State</label>
+                        </div>
+                        <div class="md-form form-sm">
+                            <!-- <i class="fa fa-lock prefix"></i> -->
+                            <i class="fas fa-map-marker-alt prefix"></i>
+
+                            <input type="text" id="country" class="form-control form-control-sm">
+                            <label for="country">Country</label>
+                        </div>
+                        <div class="md-form form-sm">
+                            <!-- <i class="fa fa-lock prefix"></i> -->
+                            <i class="fas fa-map-marker-alt prefix"></i>
+                            <input type="number" id="pincode" class="form-control form-control-sm">
+                            <label for="pincode">Pincode</label>
+                        </div>
+
+                        <div class="md-form">
+                            <div class=" alert alert-warning">
+                                <input type="checkbox" name="declaration" id="declaration" required class="">
+                                <span> Declaration: I hereby declare that all the information I have given in this
+                                    application is true, correct, and complete and is not false or misleading. I
+                                    declare
+                                    that the signature on this form is my signature, and has not been signed on my
+                                    behalf
+                                    by another person, including my agent or sponsor. I understand giving false or
+                                    misleading information is a serious offence under state and / or central law of
+                                    India.
+                                </span>
                             </div>
+                        </div>
 
-                            <div class="md-form form-sm">
-                                    <h6 class="font-weight-bold" style="display: inline;">Marital Status : &nbsp; </h6>
-                                    <span>single</span>
-                                    <input type="radio" name="marital" value="single" id="marital">
-                                    <span>Married</span>
-                                    <input type="radio" name="marital" value="married" id="marital">
-                                    <span>widowed</span>
-                                    <input type="radio" name="marital" value="widowed" id="marital">
-                                    <span>widower</span>
-                                    <input type="radio" name="marital" value="widower" id="marital">
-                                    <span>others</span>
-                                    <input type="radio" name="marital" value="others" id="marital">
-            
-                                </div>
-
-                    <div class="md-form form-sm">
-                            <i class="fa fa-lock prefix"></i>
-                            <input type="password" id="materialFormEmailModalEx1" class="form-control form-control-sm">
-                            <label for="materialFormEmailModalEx1">Your email</label>
-                    </div>
-
-                    <!-- Material input subject -->
-                    <div class="md-form form-sm">
-                        <i class="fa fa-tag prefix"></i>
-                        <input type="text" id="materialFormSubjectModalEx1" class="form-control form-control-sm">
-                        <label for="materialFormSubjectModalEx1">Subject</label>
-                    </div>
-
-                    <!-- Material textarea message -->
-                    <div class="md-form form-sm">
-                        <i class="fa fa-pencil prefix"></i>
-                        <textarea type="text" id="materialFormMessageModalEx1" class="md-textarea form-control"></textarea>
-                        <label for="materialFormMessageModalEx1">Your message</label>
-                    </div>
-
-                    <div class="text-center mt-4 mb-2">
-                        <button class="btn btn-primary">Send
-                            <i class="fa fa-send ml-2"></i>
-                        </button>
-                    </div>
-
-                </div>
-            </div>
-            <!--/.Content-->
-        </div>
-        <!--/Modal: Contact form-->
+                        <div class="text-center mt-4 mb-2">
+                            <button type="submit" name="career-form-button" id="career-form-button" class="btn btn-primary">Submit
+                                <i class="fa fa-send ml-2"></i>
+                            </button>
+                        </div>
+        </form>
+    </div>
+    </div>
+    </div>
     </div>
 
 
