@@ -42,7 +42,7 @@ _('leave-message').addEventListener("submit", event => {
 
   console.log(name, email, organisation, contact, location, message)
 
-  const apiUrl = `http://localhost/spark/restapi/career.php?name=${name}&email=${email}&organisation=${organisation}&contact=${contact}&location=${location}&message=${message}`
+  const apiUrl = `http://localhost/spark/restapi/leavemessage.php?name=${name}&email=${email}&organisation=${organisation}&contact=${contact}&location=${location}&message=${message}`
   console.log(apiUrl)
   fetch(apiUrl)
     .then(resp => resp.json())
@@ -97,7 +97,7 @@ _('career-form').addEventListener("submit", event => {
 
 
   console.log(name, mname, fname, sex, date, relegion, community, marital, blood, education, occupation, contact1, contact2, mail, address, district, state, country, pincode)
-  const apiUrl = `http://localhost/spark/restapi/leavemessage.php?name=${name}&mname=${mname}&fname=${fname}&sex=${sex}&date=${date}&relegion=${relegion}&community=${community}&marital=${marital}&blood=${blood}&education=${education}&occupation=${occupation}&contact1=${contact1}&contact2=${contact2}&mail=${mail}&address=${address}&district=${district}&state=${state}&country=${country}&pincode=${pincode}`
+  const apiUrl = `http://localhost/spark/restapi/career.php?name=${name}&mname=${mname}&fname=${fname}&sex=${sex}&date=${date}&relegion=${relegion}&community=${community}&marital=${marital}&blood=${blood}&education=${education}&occupation=${occupation}&contact1=${contact1}&contact2=${contact2}&mail=${mail}&address=${address}&district=${district}&state=${state}&country=${country}&pincode=${pincode}`
   console.log(apiUrl)
   fetch(apiUrl)
     .then(resp => resp.json())

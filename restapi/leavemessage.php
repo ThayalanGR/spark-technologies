@@ -1,32 +1,19 @@
 <?php
-
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");
 require_once('./config/dbconnection.php');
 
-
 if(isset($_GET['name'])) {
     $name = $_GET['name'];
-    $mname = $_GET['mname'];
-    $fname = $_GET['fname'];
-    $sex = $_GET['sex'];
-    $date = $_GET['date'];
-    $relegion = $_GET['relegion'];
-    $community = $_GET['community'];
-    $marital = $_GET['marital'];
-    $blood = $_GET['blood'];
-    $education = $_GET['education'];
-    $occupation  = $_GET['occupation'];
-    $contact1  = $_GET['contact1'];
-    $contact2  = $_GET['contact2'];
-    $mail  = $_GET['mail'];
-    $address  = $_GET['address'];
-    $district  = $_GET['district'];
-    $state  = $_GET['state'];
-    $country  = $_GET['country'];
-    $pincode  = $_GET['pincode'];
+    $email = $_GET['email'];
+    $organisation = $_GET['organisation'];
+    $location = $_GET['location'];
+    $contact = $_GET['contact'];
+    $message = $_GET['message'];
     
-    $sql = "INSERT INTO `tbl_career`(`name`, `fname`, `mname`, `sex`, `dob`, `relegion`, `community`, `marital_status`, `blood`, `education`, `occupation`, `conatct_1`, `contact_2`, `email`, `address`, `district`, `state`, `country`, `pincode`) VALUES ('".$name."','".$mname."','".$fname."','".$sex."','".$date."','".$relegion."','".$community."','".$marital."','".$blood."','".$education."','".$occupation."',".$contact1.",".$contact2.",'".$mail."','".$address."','".$district."','".$state."','".$country."',".$pincode.")";
+    // echo $name,$email,$organisation,$location,$contact,$message;
+
+     $sql = "INSERT INTO `tbl_leave_message`(`name`, `email`, `organisation`, `contact`, `location`, `message`) VALUES ('".$name."','".$email."','".$organisation."','".$location."',".$contact.",'".$message."')";
 
     //  echo $sql;
 
@@ -38,6 +25,6 @@ if(isset($_GET['name'])) {
         echo json_encode($json);
     }
 
-
 }
+
 ?>
