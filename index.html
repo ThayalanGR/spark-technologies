@@ -118,7 +118,7 @@
 
                     </div>
                     <div>
-                        <p class="pt-4 font-weight-light text-warning h5-responsive" >
+                        <p class="pt-4 font-weight-light text-warning h5-responsive">
                             <b class="text-primary">Sparkzeon Technologies</b> is an Indian R&D company that
                             provides technology based on research and development,
                             IT services, software development, support,
@@ -138,7 +138,7 @@
     </section>
 
     <section class="section block-2" id="services">
-        <div class="container mt-5 pt-4">
+        <div class="container-fluid mt-5 pt-4">
             <div class="row  mt-5 ">
                 <div class="col text-center text-warning " style="z-index: -9999;">
                     <h3 class="font-weight-normal"> Our Services</h3>
@@ -146,7 +146,7 @@
 
                 </div>
             </div>
-            <div class="row pl-5 pr-5 d-flex justify-content-center ">
+            <div class="row d-flex justify-content-center ">
                 <div class="col-md-2 ml-2 mr-2 mb-5 service-blocks shadow p-0 rounded">
                     <div class="view rounded">
                         <img src="http://www.mitsubishielectric.co.jp/corporate/tech/images/index/thumb_01.jpg" class="img-fluid"
@@ -631,38 +631,54 @@
                 <div class="col-md-4">
                     <div class="row">
                         <div class="col rounded shadow-lg m-2">
-                            <div class="row">
-                                <div class="col text-center text-warning m-1 h5-responsive font-weight-normal">
-                                    Leave a message
-                                    <hr>
+                            <form action="" name="leave-message" id="leave-message">
+                                <div class="row">
+                                    <div class="col text-center text-warning m-1 h5-responsive font-weight-normal">
+                                        Leave a message
+                                        <hr>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="md-form form-sm">
-                                <i class="fa fa-user prefix"></i>
-                                <input type="text" id="leave-name" class="form-control form-control-sm">
-                                <label for="leave-name">Your name</label>
-                            </div>
-                            <div class="md-form form-sm">
-                                <i class="fa fa-user prefix"></i>
-                                <input type="text" id="leave-email" class="form-control form-control-sm">
-                                <label for="leave-email">Email</label>
-                            </div>
-                            <div class="md-form form-sm">
-                                <i class="fa fa-user prefix"></i>
-                                <input type="text" id="leave-organisation" class="form-control form-control-sm">
-                                <label for="leave-organisation">Organisation</label>
-                            </div>
-                            <div class="md-form form-sm">
-                                <i class="fa fa-user prefix"></i>
-                                <input type="text" id="leave-location" class="form-control form-control-sm">
-                                <label for="leave-location">Location</label>
-                            </div>
-                            <div class="md-form form-sm">
-                                <!-- <i class="fas fa-map-marker-alt prefix"></i> -->
-                                <i class="fas fa-comment prefix"></i>
-                                <textarea type="text" id="leave-message" class="md-textarea form-control"></textarea>
-                                <label for="leave-message">Message</label>
-                            </div>
+                                <div class="md-form form-sm">
+                                    <i class="fa fa-user prefix"></i>
+                                    <input type="text" id="leave-name" class="form-control form-control-sm" required>
+                                    <label for="leave-name">Your name</label>
+                                </div>
+                                <div class="md-form form-sm">
+                                    <i class="fa fa-user prefix"></i>
+                                    <input type="email" id="leave-email" class="form-control form-control-sm" required>
+                                    <label for="leave-email">Email</label>
+                                </div>
+                                <div class="md-form form-sm">
+                                    <i class="fa fa-user prefix"></i>
+                                    <input type="text" id="leave-organisation" class="form-control form-control-sm"
+                                        required>
+                                    <label for="leave-organisation">Organisation</label>
+                                </div>
+                                <div class="md-form form-sm">
+                                    <i class="fa fa-user prefix"></i>
+                                    <input type="text" id="leave-location" class="form-control form-control-sm"
+                                        required>
+                                    <label for="leave-location">Location</label>
+                                </div>
+                                <div class="md-form form-sm">
+                                    <!-- <i class="fa fa-user prefix"></i> -->
+                                    <i class="fas fa-phone prefix"></i>
+                                    <input type="number" id="leave-cantact" class="form-control form-control-sm"
+                                        required>
+                                    <label for="leave-contact">Contact</label>
+                                </div>
+                                <div class="md-form form-sm">
+                                    <!-- <i class="fas fa-map-marker-alt prefix"></i> -->
+                                    <i class="fas fa-comment prefix"></i>
+                                    <textarea type="text" id="leave-message" class="md-textarea form-control" required></textarea>
+                                    <label for="leave-message">Message</label>
+                                </div>
+                                <div class="text-center mt-4 mb-2">
+                                    <button type="submit" name="leave-button" id="leave-button" class="btn btn-primary">Submit
+                                        <i class="fa fa-send ml-2"></i>
+                                    </button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -753,65 +769,65 @@
     <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
         aria-hidden="true">
         <!--Modal: Contact form-->
-        <form action="" name="career-form" id="career-form">
-            <div class="modal-dialog cascading-modal" role="document">
+        <div class="modal-dialog cascading-modal" role="document">
 
-                <!--Content-->
-                <div class="modal-content">
+            <!--Content-->
+            <div class="modal-content">
 
-                    <!--Header-->
-                    <div class="modal-header primary-color white-text">
-                        <h4 class="title">
-                            <i class="fa fa-pencil"></i> Career with us</h4>
-                        <button type="button" class="close waves-effect waves-light" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                        </button>
-                    </div>
-                    <!--Body-->
-                    <div class="modal-body">
+                <!--Header-->
+                <div class="modal-header primary-color white-text">
+                    <h4 class="title">
+                        <i class="fa fa-pencil"></i> Career with us</h4>
+                    <button type="button" class="close waves-effect waves-light" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <!--Body-->
+                <div class="modal-body">
+                    <form action="" name="career-form" id="career-form">
 
                         <!-- Material input name -->
                         <div class="md-form form-sm">
                             <i class="fa fa-user prefix"></i>
-                            <input type="text" id="uname" class="form-control form-control-sm">
+                            <input type="text" id="uname" class="form-control form-control-sm" required>
                             <label for="uname">Your name</label>
                         </div>
                         <div class="md-form form-sm">
                             <i class="fa fa-user prefix"></i>
-                            <input type="text" id="mname" class="form-control form-control-sm">
+                            <input type="text" id="mname" class="form-control form-control-sm" required>
                             <label for="mname">Mother name</label>
                         </div>
                         <div class="md-form form-sm">
                             <i class="fa fa-user prefix"></i>
-                            <input type="text" id="fname" class="form-control form-control-sm">
+                            <input type="text" id="fname" class="form-control form-control-sm" required>
                             <label for="fname">Fathert name</label>
                         </div>
 
                         <div class="md-form form-sm">
                             <h6 class="font-weight-bold" style="display: inline;">Sex : &nbsp; </h6>
                             <i class="fas fa-male fa-1x"></i>
-                            <input type="radio" name="gender" value="male" id="male-gender">
+                            <input type="radio" name="gender" value="male" required>
                             <i class="fas fa-female fa-1x"></i>
-                            <input type="radio" name="gender" value="female" id="female-gender">
+                            <input type="radio" name="gender" value="female">
                             <i class="fas fa-transgender-alt fa-1x"></i>
-                            <input type="radio" name="gender" value="others" id="others-gender">
+                            <input type="radio" name="gender" value="others">
 
                         </div>
 
 
                         <div class="md-form form-sm">
                             <i class="fas fa-calendar-alt prefix"></i>
-                            <input type="date" id="dob" class="form-control form-control-sm ">
+                            <input type="date" id="dob" class="form-control form-control-sm " required>
                         </div>
 
                         <div class="md-form form-sm">
                             <i class="fas fa-church prefix"></i>
-                            <input type="text" id="relegion" class="form-control form-control-sm">
+                            <input type="text" id="relegion" class="form-control form-control-sm" required>
                             <label for="relegion">Relegion</label>
                         </div>
                         <div class="md-form form-sm">
                             <i class="fas fa-theater-masks prefix"></i>
-                            <input type="text" id="community" class="form-control form-control-sm">
+                            <input type="text" id="community" class="form-control form-control-sm" required>
                             <label for="community">Community</label>
                         </div>
 
@@ -819,39 +835,39 @@
                             <i class="fas fa-dove"></i>
                             <h6 class="font-weight-bold" style="display: inline;">Marital Status : &nbsp; </h6>
                             <span>single</span>
-                            <input type="radio" name="marital" value="single" id="marital">
+                            <input type="radio" name="marital" value="single" required>
                             <span>Married</span>
-                            <input type="radio" name="marital" value="married" id="marital">
+                            <input type="radio" name="marital" value="married">
                             <span>widowed</span>
-                            <input type="radio" name="marital" value="widowed" id="marital">
+                            <input type="radio" name="marital" value="widowed">
                             <span>widower</span>
-                            <input type="radio" name="marital" value="widower" id="marital">
+                            <input type="radio" name="marital" value="widower">
                             <span>others</span>
-                            <input type="radio" name="marital" value="others" id="marital">
+                            <input type="radio" name="marital" value="others">
 
                         </div>
                         <div class="md-form form-sm">
                             <i class="fas fa-tint prefix"></i>
                             <!-- <i class="fa fa-lock prefix"></i> -->
-                            <input type="text" id="blood" class="form-control form-control-sm">
+                            <input type="text" id="blood" class="form-control form-control-sm" required>
                             <label for="blood">Blood Group</label>
                         </div>
                         <div class="md-form form-sm">
                             <i class="fas fa-graduation-cap prefix"></i>
                             <!-- <i class="fa fa-lock prefix"></i> -->
-                            <input type="text" id="education" class="form-control form-control-sm">
+                            <input type="text" id="education" class="form-control form-control-sm" required>
                             <label for="education">Educational Qualification</label>
                         </div>
                         <div class="md-form form-sm">
                             <i class="fas fa-user-md prefix"></i>
                             <!-- <i class="fa fa-lock prefix"></i> -->
-                            <input type="text" id="occupation" class="form-control form-control-sm">
+                            <input type="text" id="occupation" class="form-control form-control-sm" required>
                             <label for="occupation">Occupation</label>
                         </div>
                         <div class="md-form form-sm">
                             <i class="fas fa-phone prefix"></i>
                             <!-- <i class="fa fa-lock prefix"></i> -->
-                            <input type="number" id="mobile2" class="form-control form-control-sm">
+                            <input type="number" id="mobile2" class="form-control form-control-sm" required>
                             <label for="mobile2">Conatact number 1/ Home</label>
                         </div>
                         <div class="md-form form-sm">
@@ -863,7 +879,7 @@
                         <div class="md-form form-sm">
                             <i class="far fa-envelope-open prefix"></i>
                             <!-- <i class="fa fa-lock prefix"></i> -->
-                            <input type="email" id="email" class="form-control form-control-sm">
+                            <input type="email" id="email" class="form-control form-control-sm" required>
                             <label for="email">Your email</label>
                         </div>
                         <span class="font-weight-normal"> <i class="far fa-address-card font-weight-bold fa-1x"></i>
@@ -871,34 +887,34 @@
                         <div class="md-form form-sm">
                             <!-- <i class="fa fa-pencil prefix"></i> -->
                             <i class="fas fa-map-marker-alt prefix"></i>
-                            <textarea type="text" id="address-text" class="md-textarea form-control"></textarea>
+                            <textarea type="text" id="address-text" class="md-textarea form-control" required></textarea>
                             <label for="address-text">Door no, street, Road, town..</label>
                         </div>
                         <div class="md-form form-sm">
                             <!-- <i class="fa fa-lock prefix"></i> -->
                             <i class="fas fa-map-marker-alt prefix"></i>
 
-                            <input type="email" id="district" class="form-control form-control-sm">
-                            <label for="district">District</label>
+                            <input type="text" id="district" class="form-control form-control-sm">
+                            <label for="district" required>District</label>
                         </div>
                         <div class="md-form form-sm">
                             <!-- <i class="fa fa-lock prefix"></i> -->
                             <i class="fas fa-map-marker-alt prefix"></i>
 
-                            <input type="text" id="state" class="form-control form-control-sm">
+                            <input type="text" id="state" class="form-control form-control-sm" required>
                             <label for="state">State</label>
                         </div>
                         <div class="md-form form-sm">
                             <!-- <i class="fa fa-lock prefix"></i> -->
                             <i class="fas fa-map-marker-alt prefix"></i>
 
-                            <input type="text" id="country" class="form-control form-control-sm">
+                            <input type="text" id="country" class="form-control form-control-sm" required>
                             <label for="country">Country</label>
                         </div>
                         <div class="md-form form-sm">
                             <!-- <i class="fa fa-lock prefix"></i> -->
                             <i class="fas fa-map-marker-alt prefix"></i>
-                            <input type="number" id="pincode" class="form-control form-control-sm">
+                            <input type="number" id="pincode" class="form-control form-control-sm" required>
                             <label for="pincode">Pincode</label>
                         </div>
 
@@ -918,14 +934,15 @@
                         </div>
 
                         <div class="text-center mt-4 mb-2">
-                            <button type="submit" name="career-form-button" id="career-form-button" class="btn btn-primary">Submit
+                            <button type="submit" name="career-button" id="career-button" class="btn btn-primary">Submit
                                 <i class="fa fa-send ml-2"></i>
                             </button>
                         </div>
-        </form>
-    </div>
-    </div>
-    </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
     </div>
 
 
