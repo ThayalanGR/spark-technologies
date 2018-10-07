@@ -13,7 +13,7 @@ if(isset($_GET['name'])) {
     
     // echo $name,$email,$organisation,$location,$contact,$message;
 
-     $sql = "INSERT INTO `tbl_leave_message`(`name`, `email`, `organisation`, `contact`, `location`, `message`) VALUES ('".$name."','".$email."','".$organisation."','".$location."',".$contact.",'".$message."')";
+     $sql = "INSERT INTO `tbl_leave_message`(`name`, `email`, `organisation`, `contact`, `location`, `message`) VALUES ('".$name."','".$email."','".$organisation."',".$contact.",'".$location."','".$message."')";
 
     //  echo $sql;
 

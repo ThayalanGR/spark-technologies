@@ -33,16 +33,16 @@ _('leave-message').addEventListener("submit", event => {
   event.preventDefault()
   console.log(event)
   console.log(event.target.elements[0].value)
-  let name = event.target.elements[0].value
-  let email = event.target.elements[1].value
-  let organisation = event.target.elements[2].value
-  let location = event.target.elements[3].value
-  let contact = event.target.elements[4].value
-  let message = event.target.elements[5].value
+  let name = event.target.elements["leave-name"].value
+  let email = event.target.elements["leave-email"].value
+  let organisation = event.target.elements["leave-organisation"].value
+  let location = event.target.elements["leave-location"].value
+  let contact = event.target.elements["leave-contact"].value
+  let message = event.target.elements["leave-message"].value
 
   console.log(name, email, organisation, contact, location, message)
 
-  const apiUrl = `http://localhost/spark/restapi/leavemessage.php?name=${name}&email=${email}&organisation=${organisation}&contact=${contact}&location=${location}&message=${message}`
+  const apiUrl = `../../restapi/leavemessage.php?name=${name}&email=${email}&organisation=${organisation}&contact=${contact}&location=${location}&message=${message}`
   console.log(apiUrl)
   fetch(apiUrl)
     .then(resp => resp.json())
@@ -97,7 +97,7 @@ _('career-form').addEventListener("submit", event => {
 
 
   console.log(name, mname, fname, sex, date, relegion, community, marital, blood, education, occupation, contact1, contact2, mail, address, district, state, country, pincode)
-  const apiUrl = `http://localhost/spark/restapi/career.php?name=${name}&mname=${mname}&fname=${fname}&sex=${sex}&date=${date}&relegion=${relegion}&community=${community}&marital=${marital}&blood=${blood}&education=${education}&occupation=${occupation}&contact1=${contact1}&contact2=${contact2}&mail=${mail}&address=${address}&district=${district}&state=${state}&country=${country}&pincode=${pincode}`
+  const apiUrl = `../../restapi/career.php?name=${name}&mname=${mname}&fname=${fname}&sex=${sex}&date=${date}&relegion=${relegion}&community=${community}&marital=${marital}&blood=${blood}&education=${education}&occupation=${occupation}&contact1=${contact1}&contact2=${contact2}&mail=${mail}&address=${address}&district=${district}&state=${state}&country=${country}&pincode=${pincode}`
   console.log(apiUrl)
   fetch(apiUrl)
     .then(resp => resp.json())
