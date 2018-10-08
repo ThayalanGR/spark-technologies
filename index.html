@@ -55,18 +55,20 @@
 <body>
 
 
-    <nav class="navbar bg-transparent navbar-expand-lg navbar-light fixed-top ">
-        <a class="navbar-brand" href="#">
-            <img src="./assets/image/logo.png" height="30" alt="mdb logo">
-            <span class="font-weight-bold text-warning pl-1">Spark<span class="font-weight-bold black-text ">Zeon</span>
-            </span><span class="text-primary blue-text font-weight-bold">Technologies</span>
+
+    <nav class="navbar bg-white shadow  navbar-expand-lg navbar-light fixed-top ml-3 mr-3 mt-2 wow fadeInUp scrolling-navbar" id="navheader">
+        <a class="navbar-brand header-text" href="#" id="header-text">
+            <img src="./assets/image/logo.png" id="logo-img" class=" shadow rounded-circle animated bounce" alt="mdb logo">
+            <span class="text-warning pl-1">SPARK<span class="font-weight-bold black-text ">ZEON</span>
+            </span><span class="text-primary blue-text ">TECHNOLOGIES</span>
         </a>
-        <button class="navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNavDropdown"
-            aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler p-1 m-0 btn btn-sm btn-outline-primary shadow-sm rounded-circle bg-white" type="button"
+            data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNavDropdown" aria-expanded="false"
+            aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse scrollspy d-flex-md justify-content-end" id="navbarNav">
-            <ul class="smooth-scroll nav nav-pills nav-fill ">
+            <ul class="smooth-scroll nav nav-pills  ">
                 <li class="nav-item"><a class="nav-link active " href="#home">Home</a></li>
                 <li class="nav-item"><a class="nav-link " href="#services">Services</a></li>
                 <li class="nav-item"><a class="nav-link " href="#technologies">Technologies</a></li>
@@ -75,46 +77,55 @@
                 <li class="nav-item"><a class="nav-link " href="#aboutus">About us</a></li>
                 <li class="nav-item"><a class="nav-link " href="#contactus">Contact
                         us</a></li>
-                <li class="nav-item"><a class="nav-link " href="#" data-toggle="modal" data-target="#modalContactForm">Career
-                        with us</a></li>
+                <li class="nav-item"><a class="nav-link btn btn-sm btn-outline-primary " href="#" data-toggle="modal"
+                        data-target="#modalContactForm">Careers</a></li>
             </ul>
 
         </div>
 
     </nav>
 
-    <section class="section block-1" id="home">
-        <div class="container">
-            <div class="row">
-                <div class="col mt-5 pt-5 text-center font-weight-normal d-flex justify-content-center align-items-center flex-column ">
-                    <div class=" mt-md-5 pt-md-5">
-                        <img src="./design/Artboard 1 copy.png" class="img-handler img-fluid" alt="">
+    <!-- <section class="section block-1" id="home"> -->
+    <div class="view zoom full-page-intro section" id="home" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/78.jpg'); background-repeat: no-repeat; background-size: cover;">
 
-                    </div>
-                    <div>
-                        <p class="pt-4 font-weight-light text-warning h5-responsive">
-                            <b class="text-primary">Sparkzeon Technologies</b> is an Indian R&D company that
-                            provides technology based on research and development,
-                            IT services, software development, support,
-                            maintenance and services, data analytics, web designing
-                            and hosting, digital technology, educational services
-                            and support, consulting,
-                            data processing, and operations services.
+        <!-- Mask & flexbox options-->
+        <div class="mask pattern-8 d-flex justify-content-center align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col  text-center font-weight-normal d-flex justify-content-center align-items-center flex-column ">
+                        <div class="pt-md-5">
+                            <img src="./design/Artboard 1 copy.png" id="sec-1-img" class="animated rotateIn img-handler rounded-circle shadow-lg img-fluid"
+                                alt="">
 
-                        </p>
+                        </div>
+                        <div>
+                            <p class="pt-4 font-weight-light text-warning h5-responsive wow fadeInUp">
+                                <b class="text-primary">Sparkzeon Technologies</b> is an Indian R&D company that
+                                provides technology based on research and development,
+                                IT services, software development, support,
+                                maintenance and services, data analytics, web designing
+                                and hosting, digital technology, educational services
+                                and support, consulting,
+                                data processing, and operations services.
+
+                            </p>
+                        </div>
+
                     </div>
 
                 </div>
-
             </div>
         </div>
+    </div>
 
-    </section>
+    <!-- </section> -->
 
-    <section class="section block-2" id="services">
-        <div class="container-fluid mt-5 pt-4">
+
+    
+    <section class="view zoom section block-2 d-flex justify-content-center align-items-center aqua-gradient"  id="services">
+        <div class="container-fluid mt-5 pt-4" style="z-index: 9;">
             <div class="row  mt-5 ">
-                <div class="col text-center text-warning " style="z-index: -9999;">
+                <div class="col text-center text-white font-weight-bold " style="z-index: -9999;">
                     <h3 class="font-weight-normal"> Our Services</h3>
                     <hr>
 
@@ -123,59 +134,60 @@
             <div class="row d-flex justify-content-center ">
                 <div class="col-md-2 ml-2 mr-2 mb-5 service-blocks shadow p-0 rounded">
                     <div class="view rounded">
-                        <img src="./assets/image/service1.jpg" class="img-fluid"
-                            style="height: 160px; width: 100%;" alt="placeholder">
+                        <img src="./assets/image/service1.jpg" class="img-fluid" style="height: 160px; width: 100%;"
+                            alt="placeholder">
                         <div class="mask flex-center waves-effect waves-light rgba-teal-strong">
                             <p class="white-text text-center">Technologies based on research and development</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2 ml-2 mr-2 mb-5 service-blocks shadow p-0 rounded">
+                <div class="col-md-2 ml-2 mr-2 mb-5 service-blocks shadow p-0 rounded wow fadeInUp">
                     <div class="view rounded">
-                        <img src="./assets/image/service2.jpg" class="img-fluid" style="height: 160px; width: 100%;"
+                        <img src="./assets/image/service2.jpg" class="img-fluid " style="height: 160px; width: 100%;"
                             alt="placeholder">
                         <div class="mask flex-center waves-effect waves-light rgba-teal-strong">
                             <p class="white-text text-center">IT services</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2 ml-2 mr-2 mb-5 service-blocks shadow p-0 rounded">
+                
+                <div class="col-md-2 ml-2 mr-2 mb-5 service-blocks shadow p-0 rounded wow fadeInUp">
                     <div class="view rounded">
-                        <img src="./assets/image/service3.png"
-                            class="img-fluid" style="height: 160px; width: 100%;" alt="placeholder">
+                        <img src="./assets/image/service3.png" class="img-fluid" style="height: 160px; width: 100%;"
+                            alt="placeholder">
                         <div class="mask flex-center waves-effect waves-light rgba-teal-strong">
                             <p class="white-text text-center">Software development support, maintenance and services</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2 ml-2 mr-2 mb-5 service-blocks shadow p-0 rounded">
+                <div class="col-md-2 ml-2 mr-2 mb-5 service-blocks shadow p-0 rounded wow fadeInUp">
                     <div class="view rounded">
-                        <img src="./assets/image/service4.jpg"
-                            class="img-fluid" style="height: 160px; width: 100%;" alt="placeholder">
+                        <img src="./assets/image/service4.jpg" class="img-fluid" style="height: 160px; width: 100%;"
+                            alt="placeholder">
                         <div class="mask flex-center waves-effect waves-light rgba-teal-strong">
-                            <p class="white-text text-center">Data analytics</p>
+                            <p class="white-text text-center">Advanced Data analytics</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2 ml-2 mr-2 mb-5 service-blocks shadow p-0 rounded">
+                <div class="col-md-2 ml-2 mr-2 mb-5 service-blocks shadow p-0 rounded wow fadeInUp">
                     <div class="view rounded">
-                        <img src="./assets/image/service5.png"
-                            class="img-fluid" style="height: 160px; width: 100%;" alt="placeholder">
+                        <img src="./assets/image/service5.png" class="img-fluid" style="height: 160px; width: 100%;"
+                            alt="placeholder">
                         <div class="mask flex-center waves-effect waves-light rgba-teal-strong">
                             <p class="white-text text-center">Web designing and hosting</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2 ml-2 mr-2 mb-5 service-blocks shadow p-0 rounded">
+                <div class="col-md-2 ml-2 mr-2 mb-5 service-blocks shadow p-0 rounded wow fadeInUp">
                     <div class="view rounded">
-                        <img src="./assets/image/service6.png"
-                            class="img-fluid" style="height: 160px; width: 100%;" alt="placeholder">
+                        <img src="./assets/image/service6.png" class="img-fluid" style="height: 160px; width: 100%;"
+                            alt="placeholder">
                         <div class="mask flex-center waves-effect waves-light rgba-teal-strong">
                             <p class="white-text text-center">Mobile Applications</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2 ml-2 mr-2 mb-5 service-blocks shadow p-0 rounded">
+                <div class="col-md-2 ml-2 mr-2 mb-5 service-blocks shadow p-0 rounded wow fadeInUp">
                     <div class="view rounded">
                         <img src="./assets/image/service7.jpg" class="img-fluid" style="height: 160px; width: 100%;"
                             alt="placeholder">
@@ -184,90 +196,89 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2 ml-2 mr-2 mb-5 service-blocks shadow p-0 rounded">
+                <div class="col-md-2 ml-2 mr-2 mb-5 service-blocks shadow p-0 rounded wow fadeInUp">
                     <div class="view rounded">
-                        <img src="./assets/image/service8.jpg"
-                            class="img-fluid" style="height: 160px; width: 100%;" alt="placeholder">
+                        <img src="./assets/image/service8.jpg" class="img-fluid" style="height: 160px; width: 100%;"
+                            alt="placeholder">
                         <div class="mask flex-center waves-effect waves-light rgba-teal-strong">
                             <p class="white-text text-center">Educational services and support</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2 ml-2 mr-2 mb-5 service-blocks shadow p-0 rounded">
+                <div class="col-md-2 ml-2 mr-2 mb-5 service-blocks shadow p-0 rounded wow fadeInUp">
                     <div class="view rounded">
-                        <img src="./assets/image/service9.jpg"
-                            class="img-fluid" style="height: 160px; width: 100%;" alt="placeholder">
+                        <img src="./assets/image/service9.jpg" class="img-fluid" style="height: 160px; width: 100%;"
+                            alt="placeholder">
                         <div class="mask flex-center waves-effect waves-light rgba-teal-strong">
                             <p class="white-text text-center">Consultation and services</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2 ml-2 mr-2 mb-5 service-blocks shadow p-0 rounded">
+                <div class="col-md-2 ml-2 mr-2 mb-5 service-blocks shadow p-0 rounded wow fadeInUp">
                     <div class="view rounded">
-                        <img src="./assets/image/service10.jpg"
-                            class="img-fluid" style="height: 160px; width: 100%;" alt="placeholder">
+                        <img src="./assets/image/service10.jpg" class="img-fluid" style="height: 160px; width: 100%;"
+                            alt="placeholder">
                         <div class="mask flex-center waves-effect waves-light rgba-teal-strong">
-                            <p class="white-text text-center">Data processing and operations services</p>
+                            <p class="white-text text-center">Data processing</p>
+                            <!-- and operations services -->
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2 ml-2 mr-2 mb-5 service-blocks shadow p-0 rounded">
+                <div class="col-md-2 ml-2 mr-2 mb-5 service-blocks shadow p-0 rounded wow fadeInUp">
                     <div class="view rounded">
-                        <img src="./assets/image/service11.jpg"
-                            class="img-fluid" style="height: 160px; width: 100%;" alt="placeholder">
+                        <img src="./assets/image/service11.jpg" class="img-fluid" style="height: 160px; width: 100%;"
+                            alt="placeholder">
                         <div class="mask flex-center waves-effect waves-light rgba-teal-strong">
                             <p class="white-text text-center">Logo Designing and Copyrights</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <br>
-            <hr>
 
         </div>
     </section>
-    <section id="technologies" class="section block-3 mt-5 pt-5">
-        <div class="container mt-5 pt-5">
-            <div class="row">
+    <section id="technologies" class="section block-3 d-flex  justify-content-center winter-neva-gradient align-items-center">
+        <div class="container wow fadeInUp" style="z-index: 9;">
+            <div class="row mb-5 pb-2 ">
                 <div class="col text-center">
-                    <h3 class=" font-weight-normal orange-text">Technologies</h3>
+                    <h3 class=" font-weight-bold white-text  wow fadeInUp ">Technologies</h3>
                     <hr>
                 </div>
             </div>
-            <div class="row pt-2">
-                <div class="col-md-3 text-center">
-                    <i class="fas fa-robot fa-6x text-danger "></i>
-                    <p class="text-danger mt-3 font-weight-bold">Artificial Intelligence</p>
+            <div class="row pt-2 wow fadeInUp">
+                <div class="col-md-3 text-center ">
+                    <i class="fas fa-robot fa-6x text-danger"></i>
+                    <p class="text-danger mt-3 font-weight-bold ">Artificial Intelligence</p>
                 </div>
-                <div class="col-md-3 text-center">
+                <div class="col-md-3 text-center wow fadeInUp">
                     <i class="fab fa-dyalog fa-6x text-success "></i>
                     <p class="text-success mt-3 font-weight-bold">Deep Learning</p>
                 </div>
-                <div class="col-md-3 text-center">
+                <div class="col-md-3 text-center wow fadeInUp">
                     <i class="fas fa-space-shuttle fa-6x light-blue-text"></i>
                     <!-- <i class="fas fa-robot  "></i> -->
                     <p class="light-blue-text mt-3 font-weight-bold">Machine Learning</p>
                 </div>
-                <div class="col-md-3 text-center">
+                <div class="col-md-3 text-center wow fadeInUp">
                     <i class="far fa-images fa-6x purple-text"></i>
                     <p class="mt-3 font-weight-bold purple-text">Image Processing</p>
                 </div>
-                <div class="col-md-3 pt-4 mt-4 text-center">
+                <div class="col-md-3 pt-4 mt-4 text-center wow fadeInUp">
                     <i class="fas fa-cloud fa-6x cyan-text"></i>
                     <!-- <i class="fas fa-robot  text-danger "></i> -->
                     <p class="cyan-text mt-3 font-weight-bold">Cloud Computing</p>
                 </div>
-                <div class="col-md-3 mt-4 pt-4 text-center">
+                <div class="col-md-3 mt-4 pt-4 text-center wow fadeInUp">
                     <i class="fas fa-database fa-6x orange-text"></i>
                     <!-- <i class="fas fa-robot  text-danger "></i> -->
                     <p class="orange-text mt-3 font-weight-bold">Big Data</p>
                 </div>
-                <div class="col-md-3 mt-4 pt-4 text-center">
+                <div class="col-md-3 mt-4 pt-4 text-center wow fadeInUp">
                     <i class="fas fa-notes-medical fa-6x amber-text"></i>
                     <!-- <i class="fas fa-robot  text-danger "></i> -->
                     <p class="amber-text mt-3 font-weight-bold">Bio-Medical Image Processing</p>
                 </div>
-                <div class="col-md-3 mt-4 pt-4 text-center">
+                <div class="col-md-3 mt-4 pt-4 text-center wow fadeInUp">
                     <i class="fas fa-eye fa-6x lime-text"></i>
                     <!-- <i class="fas fa-robot fa-6x text-danger "></i> -->
                     <p class="lime-text mt-3 font-weight-bold">VLSI</p>
@@ -316,12 +327,29 @@
             </div>
         </div>
     </section>
+
     <section id="aboutus" class="section block-5 team-section text-center mt-5 pt-5 ">
         <div class="container">
+
+
             <div class="row mt-3">
                 <div class="col text-center">
                     <!-- Section heading -->
-                    <h4 class="font-weight-normal text-primary mb-3 mt-2"><u> About us </u></h4>
+
+                    <div class="row">
+                        <div class="col text-center">
+                            <h4 class="font-weight-normal text-primary mb-3 mt-2"><u> About us </u></h4>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+
+                        </div>
+                    </div>
+
+
+
                     <h5 class="font-weight-normal my-3 mx-auto mb-3 text-warning">Board of Directors / Advisory
                         Committee Members</h5>
                     <!-- Section description -->
@@ -607,9 +635,11 @@
                         <div class="col rounded shadow-lg m-2">
                             <form action="" name="leave-message" id="leave-message">
                                 <div class="row">
-                                    <div class="col text-center text-warning m-1 h5-responsive font-weight-normal">
-                                        Leave a message
-                                        <hr>
+                                    <div class="col text-center  pt-1 mb-0 ">
+                                        <span class="h5-responsive text-warning font-weight-normal">Leave us a message</span>
+                                        <p class="alert alert-info">Contact us by filling out the form below; if you
+                                            would like more information about our services, products, or any questions
+                                            about us as a company.</p>
                                     </div>
                                 </div>
                                 <div class="md-form form-sm">
