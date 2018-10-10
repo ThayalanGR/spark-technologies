@@ -8,15 +8,12 @@ function _(element) {
 }
 new WOW().init();
 // object-fit polyfill run
-objectFitImages();
+// objectFitImages();
 
-/* init Jarallax */
-jarallax(document.querySelectorAll('.jarallax'));
-
-jarallax(document.querySelectorAll('.jarallax-keep-img'), {
-    keepImg: true,
-});
-
+function scrollme(name) {
+  // $.scrollify.move(name);
+  $.scrollify.update()
+}
 //google maps api function  
 var map;
 
@@ -29,6 +26,27 @@ function initMap() {
     zoom: 8
   });
 }
+
+// $.scrollify({
+//   section : "section",
+//   sectionName : "section-name",
+//   interstitialSection : "",
+//   easing: "easeOutExpo",
+//   scrollSpeed: 1100,
+//   offset : 0,
+//   scrollbars: true,
+//   standardScrollElements: "",
+//   setHeights: true,
+//   overflowScroll: true,
+//   updateHash: true,
+//   touchScroll:true,
+//   before:function() {},
+//   after:function() {},
+//   afterResize:function() {},
+//   afterRender:function() {}
+// });
+      
+
 
 
 
