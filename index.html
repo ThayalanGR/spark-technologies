@@ -75,6 +75,15 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.11/css/mdb.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="./assets/style/index.css">
+
+    <style>
+    
+    @media (max-width: 580px) {
+        #image-left {
+            display: none;
+        }
+    }
+    </style>
 </head>
 
 <body>
@@ -108,7 +117,7 @@
 
         </div>
 
-    </nav>
+    </nav> 
 
     <!-- <section class="section block-1" id="home"> -->
     <div class="view zoom full-page-intro section scrollme black" data-section-name="home">
@@ -117,12 +126,12 @@
         <div class="mask d-flex justify-content-center align-items-center">
             <div class="container-fluid">
                 <div class="row text-center">
-                    <div class="col-sm-12 pt-5 text-center col-md-5 d-flex justify-content-center align-items-center">
-                        <img src="./design/trans.png" style="width: 350px;" class=" animated rotateIn wow img-handler shadow-lg img-fluid"
+                    <div id="logo-large" class="pt-5 text-center col-md-5 d-flex  justify-content-center align-items-center">
+                        <img src="./design/trans.png" id="image-left"  class="animated rotateIn wow img-handler shadow-lg img-fluid"
                             alt="">
                     </div>
                     <div class="col-sm-12 col-md-7 d-flex justify-content-center flex-column align-items-center p-5">
-                        <h2 class="text-warning font-weight-bold">About us</h2>
+                        <h2 class="text-warning font-weight-bold heading-mobile">About us</h2>
                         <p class="pt-4 font-weight-light text-warning h5-responsive wow fadeInUp">
                             <b class="text-primary">Sparkzeon Technologies</b> is an Indian R&D company that
                             provides technology based on research and development,
