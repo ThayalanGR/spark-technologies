@@ -31,7 +31,7 @@ body {
     min-height: 100vh;
     min-width: 100vw;
     /* overflow: hidden; */
-    transition: all 1s;
+    /* transition: all 1s; */
 }
 
 
@@ -247,6 +247,7 @@ li {
     #sec-1-img {
         width: 180px;
     }
+
     #logo-img {
         max-width: 28px;
     }
@@ -254,4 +255,31 @@ li {
     body {
         font-size: 12px;
     }
+}
+
+
+.no-scroll {
+    overflow-y: hidden;
+    position: fixed;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+	background-color: #F5F5F5;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+    /* box-shadow: inset 0 0 5px grey;  */
+    /* border-radius: 10px; */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: #000000;
+	border: 2px solid #555555;
 }

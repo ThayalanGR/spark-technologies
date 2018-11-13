@@ -1,3 +1,6 @@
+
+
+
 // alert(0)
 $('body').scrollspy({
   target: '.scrollspy'
@@ -6,6 +9,8 @@ $('body').scrollspy({
 function _(element) {
   return document.getElementById(element)
 }
+
+
 new WOW().init();
 // object-fit polyfill run
 // objectFitImages();

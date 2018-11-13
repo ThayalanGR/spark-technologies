@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <!-- <meta name="keywords" content="">  -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="./assets/image/spark.ico" type="image/x-icon">
@@ -80,12 +81,12 @@
 
 
 
-    <nav class="navbar bg-white shadow  navbar-expand-lg navbar-light fixed-top ml-3 mr-3 mt-2 wow fadeInUp scrolling-navbar"
+    <nav class="navbar bg-transparent shadow  navbar-expand-lg navbar-light fixed-top ml-3 mr-3 mt-2 scrolling-navbar"
         id="navheader">
         <a class="navbar-brand header-text" href="#" id="header-text">
             <img src="./assets/image/logo.png" id="logo-img" class=" shadow rounded-circle animated bounce" alt="mdb logo">
-            <span class="text-warning pl-1">SPARK<span class="font-weight-bold black-text ">ZEON</span>
-            </span><span class="text-primary blue-text ">TECHNOLOGIES</span>
+            <span class="orange-text font-weight-bold pl-1">SPARK<span class="font-weight-bold text-white ">ZEON</span>
+            </span><span class="text-primary] blue-text ">TECHNOLOGIES</span>
         </a>
         <button class="navbar-toggler p-1 m-0 btn btn-sm btn-outline-primary shadow-sm rounded-circle bg-white" type="button"
             data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -99,11 +100,10 @@
                 <li class="nav-item"><a class="nav-link " href="#technologies">Technologies</a></li>
                 <li class="nav-item"><a class="nav-link " href="#projects">Our
                         Projects</a></li>
-                <li class="nav-item"><a class="nav-link " href="#aboutus">About us</a></li>
+                <!-- <li class="nav-item"><a class="nav-link " href="#aboutus">About us</a></li> -->
                 <li class="nav-item"><a class="nav-link " href="#contactus">Contact
                         us</a></li>
-                <li class="nav-item"><a class="nav-link btn btn-sm btn-outline-primary " href="#" data-toggle="modal"
-                        data-target="#modalContactForm">Careers</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" data-toggle="modal" data-target="#modalContactForm">Careers</a></li>
             </ul>
 
         </div>
@@ -111,32 +111,28 @@
     </nav>
 
     <!-- <section class="section block-1" id="home"> -->
-    <div class="view zoom full-page-intro section scrollme black" data-section-name="home" >
+    <div class="view zoom full-page-intro section scrollme black" data-section-name="home">
 
         <!-- Mask & flexbox options-->
         <div class="mask d-flex justify-content-center align-items-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col  text-center font-weight-normal d-flex justify-content-center  align-items-center flex-row ">
-                        <div class="pt-md-5" style="min-width: 500px;">
-                            <img src="./design/trans.png" id="sec-1-img" class="animated rotateIn img-handler shadow-lg img-fluid"
-                                alt="">
+            <div class="container-fluid">
+                <div class="row text-center">
+                    <div class="col-sm-12 pt-5 text-center col-md-5 d-flex justify-content-center align-items-center">
+                        <img src="./design/trans.png" style="width: 350px;" class=" animated rotateIn wow img-handler shadow-lg img-fluid"
+                            alt="">
+                    </div>
+                    <div class="col-sm-12 col-md-7 d-flex justify-content-center flex-column align-items-center p-5">
+                        <h2 class="text-warning font-weight-bold">About us</h2>
+                        <p class="pt-4 font-weight-light text-warning h5-responsive wow fadeInUp">
+                            <b class="text-primary">Sparkzeon Technologies</b> is an Indian R&D company that
+                            provides technology based on research and development,
+                            IT services, software development, support,
+                            maintenance and services, data analytics, web designing
+                            and hosting, digital technology, educational services
+                            and support, consulting,
+                            data processing, and operations services.
 
-                        </div>
-                        <div>
-                            <h2 class="text-warning font-weight-bold">About us</h2>
-                            <p class="pt-4 font-weight-light text-warning h5-responsive wow fadeInUp">
-                                <b class="text-primary">Sparkzeon Technologies</b> is an Indian R&D company that
-                                provides technology based on research and development,
-                                IT services, software development, support,
-                                maintenance and services, data analytics, web designing
-                                and hosting, digital technology, educational services
-                                and support, consulting,
-                                data processing, and operations services.
-
-                            </p>
-                        </div>
-
+                        </p>
                     </div>
 
                 </div>
@@ -148,12 +144,11 @@
 
 
 
-    <section class="section block-2 d-flex justify-content-center align-items-center aqua-gradient scrollme"
-        data-section-name="services">
+    <section class="section block-2 d-flex justify-content-center align-items-center black scrollme" data-section-name="services">
         <div class="container-fluid mt-5 pt-4" style="z-index: 9;">
             <div class="row  mt-5 ">
                 <div class="col text-center text-white font-weight-bold " style="z-index: -9999;">
-                    <h3 class="font-weight-normal"> Our Services</h3>
+                    <h3 class="font-weight-bold text-warning"> Our Services</h3>
                     <hr>
 
                 </div>
@@ -163,7 +158,7 @@
                     <div class="view rounded">
                         <img src="./assets/image/service1.jpg" class="img-fluid" style="height: 160px; width: 100%;"
                             alt="placeholder">
-                        <div class="mask flex-center waves-effect waves-light rgba-teal-strong">
+                        <div class="mask flex-center waves-effect waves-light">
                             <p class="white-text text-center">Technologies based on research and development</p>
                         </div>
                     </div>
@@ -172,7 +167,7 @@
                     <div class="view rounded">
                         <img src="./assets/image/service2.jpg" class="img-fluid " style="height: 160px; width: 100%;"
                             alt="placeholder">
-                        <div class="mask flex-center waves-effect waves-light rgba-teal-strong">
+                        <div class="mask flex-center waves-effect waves-light ">
                             <p class="white-text text-center">IT services</p>
                         </div>
                     </div>
@@ -182,7 +177,7 @@
                     <div class="view rounded">
                         <img src="./assets/image/service3.png" class="img-fluid" style="height: 160px; width: 100%;"
                             alt="placeholder">
-                        <div class="mask flex-center waves-effect waves-light rgba-teal-strong">
+                        <div class="mask flex-center waves-effect waves-light ">
                             <p class="white-text text-center">Software development support, maintenance and services</p>
                         </div>
                     </div>
@@ -191,7 +186,7 @@
                     <div class="view rounded">
                         <img src="./assets/image/service4.jpg" class="img-fluid" style="height: 160px; width: 100%;"
                             alt="placeholder">
-                        <div class="mask flex-center waves-effect waves-light rgba-teal-strong">
+                        <div class="mask flex-center waves-effect waves-light ">
                             <p class="white-text text-center">Advanced Data analytics</p>
                         </div>
                     </div>
@@ -200,7 +195,7 @@
                     <div class="view rounded">
                         <img src="./assets/image/service5.png" class="img-fluid" style="height: 160px; width: 100%;"
                             alt="placeholder">
-                        <div class="mask flex-center waves-effect waves-light rgba-teal-strong">
+                        <div class="mask flex-center waves-effect waves-light ">
                             <p class="white-text text-center">Web designing and hosting</p>
                         </div>
                     </div>
@@ -209,7 +204,7 @@
                     <div class="view rounded">
                         <img src="./assets/image/service6.png" class="img-fluid" style="height: 160px; width: 100%;"
                             alt="placeholder">
-                        <div class="mask flex-center waves-effect waves-light rgba-teal-strong">
+                        <div class="mask flex-center waves-effect waves-light ">
                             <p class="white-text text-center">Mobile Applications</p>
                         </div>
                     </div>
@@ -218,7 +213,7 @@
                     <div class="view rounded">
                         <img src="./assets/image/service7.jpg" class="img-fluid" style="height: 160px; width: 100%;"
                             alt="placeholder">
-                        <div class="mask flex-center waves-effect waves-light rgba-teal-strong">
+                        <div class="mask flex-center waves-effect waves-light ">
                             <p class="white-text text-center">Digital technology</p>
                         </div>
                     </div>
@@ -227,7 +222,7 @@
                     <div class="view rounded">
                         <img src="./assets/image/service8.jpg" class="img-fluid" style="height: 160px; width: 100%;"
                             alt="placeholder">
-                        <div class="mask flex-center waves-effect waves-light rgba-teal-strong">
+                        <div class="mask flex-center waves-effect waves-light">
                             <p class="white-text text-center">Educational services and support</p>
                         </div>
                     </div>
@@ -236,7 +231,7 @@
                     <div class="view rounded">
                         <img src="./assets/image/service9.jpg" class="img-fluid" style="height: 160px; width: 100%;"
                             alt="placeholder">
-                        <div class="mask flex-center waves-effect waves-light rgba-teal-strong">
+                        <div class="mask flex-center waves-effect waves-light">
                             <p class="white-text text-center">Consultation and services</p>
                         </div>
                     </div>
@@ -245,7 +240,7 @@
                     <div class="view rounded">
                         <img src="./assets/image/service10.jpg" class="img-fluid" style="height: 160px; width: 100%;"
                             alt="placeholder">
-                        <div class="mask flex-center waves-effect waves-light rgba-teal-strong">
+                        <div class="mask flex-center waves-effect waves-light">
                             <p class="white-text text-center">Data processing</p>
                             <!-- and operations services -->
                         </div>
@@ -255,7 +250,7 @@
                     <div class="view rounded">
                         <img src="./assets/image/service11.jpg" class="img-fluid" style="height: 160px; width: 100%;"
                             alt="placeholder">
-                        <div class="mask flex-center waves-effect waves-light rgba-teal-strong">
+                        <div class="mask flex-center waves-effect waves-light">
                             <p class="white-text text-center">Logo Designing and Copyrights</p>
                         </div>
                     </div>
@@ -264,11 +259,13 @@
 
         </div>
     </section>
-    <section data-section-name="technologies" class="section block-3 d-flex  justify-content-center winter-neva-gradient align-items-center scrollme">
+
+
+    <section data-section-name="technologies" class="section block-3 d-flex  justify-content-center black align-items-center scrollme">
         <div class="container" style="z-index: 9;">
             <div class="row mb-5 pb-2 ">
                 <div class="col text-center">
-                    <h3 class=" font-weight-bold white-text  wow fadeInUp ">Technologies</h3>
+                    <h3 class=" font-weight-bold text-warning  wow fadeInUp ">Technologies</h3>
                     <hr>
                 </div>
             </div>
@@ -314,10 +311,12 @@
         </div>
 
     </section>
-    <section data-section-name="projects" class="section block-4 pt-5 dusty-grass-gradient scrollme">
+
+
+    <section data-section-name="projects" class="section block-4 pt-5 black scrollme">
         <div class="container pt-5">
             <div class="row">
-                <div class="col text-center text-warning font-weight-normal h3">
+                <div class="col text-center text-warning font-weight-bold h3-responsive">
                     Our Projects
                     <hr>
                 </div>
@@ -325,21 +324,19 @@
             <div class="row">
                 <div class="col-md-6 col-sm-12 text-primary h5-responsive wow fadeInUp">
                     <i class="fas fa-bullseye text-danger text-center-sm mr-md-2"></i>
-                    Trust for Social Welfare and Rehabilitation Centre <br> <br> <br>
+                    <a href="#">Trust for Social Welfare and Rehabilitation Centre</a> <br> <br> <br>
                     <i class="fas fa-bullseye text-danger mr-md-2"></i>
-                    Vidiyal Liberated Trust. <br> <br> <br>
+                    <a href="#">Vidiyal Liberated Trust.</a> <br> <br> <br>
                     <i class="fas fa-bullseye text-danger mr-md-2"></i>
-                    Poovanam Trust. <br> <br> <br>
+                    <a href="#">Poovanam Trust.</a> <br> <br> <br>
                     <i class="fas fa-bullseye text-danger mr-md-2"></i>
-                    Aron Matrimony. <br> <br> <br>
+                    <a href="#">Aron Matrimony.</a> <br> <br> <br>
                     <i class="fas fa-bullseye text-danger mr-md-2"></i>
-                    Arul Garments. <br><br> <br>
+                    <a href="#">Arul Garments.</a> <br><br> <br>
                     <i class="fas fa-bullseye text-danger mr-md-2"></i>
-                    Mother Teresa Health Centre Management System. <br><br> <br>
+                    <a href="#">Construction Company.</a> <br><br> <br>
                     <i class="fas fa-bullseye text-danger mr-md-2"></i>
-                    Construction Company. <br><br> <br>
-                    <i class="fas fa-bullseye text-danger mr-md-2"></i>
-                    Sankara Nethralaya Research Foundation. <br> <br>
+                    <a href="#">Sankara Nethralaya Research Foundation.</a> <br> <br>
                     <br>
                 </div>
                 <div class="col-md-6 wow zoomIn " id="project-hide">
@@ -352,156 +349,122 @@
         </div>
     </section>
 
-    <section data-section-name="aboutus" class="section block-5 team-section text-center scrollme">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col text-center">
-                    <div class="row  near-moon-gradient p-md-5" style="width: 100vw; background-blend-mode: lighten; height: 100vh; ">
-                        <div class="col d-flex justify-content-center align-items-center text-center">
-                            <div class="row deep-blue-gradient shadow rounded p-4 wow fadeInUp" style="height: auto; width: 450px;">
-                                <div class="col text-center text-dark h5-responsive " style="width: 450px;">
-                                    <br>
-                                    <span class="font-weight-normal h4-responsive">About-us</span>
-                                    <hr>
-                                    <p class="text-dark">
-                                        <strong class="text-primary">Sparkzeon Technologies</strong> is an Indian R&D
-                                        company
-                                        that
-                                        provides technology based on research and development,
-                                        IT services, software development, support,
-                                        maintenance and services, data analytics, web designing
-                                        and hosting, digital technology, educational services
-                                        and support, consulting,
-                                        data processing, and operations services.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-
-    <div class="container-fluid row tempting-azure-gradient scrollme" style="height: 100vh;">
+    <div class="container-fluid row black scrollme m-0" style="height: 100vh; width: 100vw;">
         <div class="col d-flex justify-content-center align-items-center flex-column">
             <div class="row">
                 <div class="col">
-                    <p class="font-weight-normal h4-responsive my-3 mx-auto mb-3 text-warning">Board of
-                        Directors /
-                        Advisory
-                        Committee Members</h5><br><br>
+                    <p class="font-weight-bold h3-responsive my-3 mx-auto mb-3 text-warning">Board of Directors </h5><br><br>
                         <!-- Section description -->
                     </p>
                 </div>
             </div>
-            <div class="row d-flex justify-content-center align-items-center wow fadeInUp text-center">
+            <div class="row d-flex justify-content-center align-items-center wow fadeInUp text-center text-white">
                 <!-- Grid column -->
                 <!-- Grid column -->
-                <div class="col-md-2 ">
+                <a class="col-md-2 " onclick="fetchmemberdetails('punniyamoorthy')">
                     <div class="avatar mx-auto">
                         <img src="https://raw.githubusercontent.com/ThayalanGR/dotcc/master/assets/img/avatar_2x.png"
-                            style="max-width: 150px;" class="rounded-circle z-depth-1" alt="avatar">
+                            style="max-width: 150px; max-height: 150px;" class="rounded-circle z-depth-1" alt="avatar">
                     </div>
                     <p class="font-weight-normal mt-2 mb-2">Dr.M.Punniyamoorthy</p>
                     <!-- <p class="text-uppercase blue-text"><strong>Graphic designer</strong></p> -->
                     <!-- <p class="grey-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
                                                     consectetur,
                                                     adipisci sed quia non numquam modi tempora eius.</p> -->
-                </div>
+                </a>
                 <!-- Grid column -->
                 <!-- Grid column -->
-                <div class="col-md-2 m-1 p-1 ">
+                <a class="col-md-2 m-1 p-1 " onclick="fetchmemberdetails('ganesh')">
                     <div class="avatar mx-auto">
-                        <img src="https://raw.githubusercontent.com/ThayalanGR/dotcc/master/assets/img/avatar_2x.png"
-                            style="max-width: 150px;" class="rounded-circle z-depth-1" alt="avatar">
+                        <img src="./assets/image/directors/ganesh.jpg" style="max-width: 150px; max-height: 150px;"
+                            class="rounded-circle z-depth-1" alt="avatar">
                     </div>
                     <p class="font-weight-normal mt-2 mb-2">Dr. Ganesh</p>
                     <!-- <p class="text-uppercase blue-text"><strong>Graphic designer</strong></p> -->
                     <!-- <p class="grey-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
                             consectetur,
                             adipisci sed quia non numquam modi tempora eius.</p> -->
-                </div>
+                </a>
                 <!-- Grid column -->
                 <!-- Grid column -->
-                <div class="col-md-2 m-1 p-1 ">
+                <a class="col-md-2 m-1 p-1 " onclick="fetchmemberdetails('michael')">
                     <div class="avatar mx-auto">
-                        <img src="https://raw.githubusercontent.com/ThayalanGR/dotcc/master/assets/img/avatar_2x.png"
-                            style="max-width: 150px;" class="rounded-circle z-depth-1" alt="avatar">
+                        <img src="./assets/image/directors/michael.jpg" style="max-width: 150px; max-height: 150px;"
+                            class="rounded-circle z-depth-1" alt="avatar">
                     </div>
                     <p class="font-weight-normal mt-2 mb-2">Dr. Michael Arock </p>
                     <!-- <p class="text-uppercase blue-text"><strong>Graphic designer</strong></p> -->
                     <!-- <p class="grey-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
                             consectetur,
                             adipisci sed quia non numquam modi tempora eius.</p> -->
-                </div>
+                </a>
                 <!-- Grid column -->
                 <!-- Grid column -->
-                <div class="col-md-2 m-1 p-1 ">
+                <a class="col-md-2 m-1 p-1 " onclick="fetchmemberdetails('vadivel')">
                     <div class="avatar mx-auto">
-                        <img src="https://raw.githubusercontent.com/ThayalanGR/dotcc/master/assets/img/avatar_2x.png"
-                            style="max-width: 150px;" class="rounded-circle z-depth-1" alt="avatar">
+                        <img src="./assets/image/directors/vadivel.jpg" style="max-width: 150px; max-height: 150px;"
+                            class="rounded-circle z-depth-1" alt="avatar">
                     </div>
                     <p class="font-weight-normal mt-2 mb-2">Dr. A. Vadivel</p>
                     <!-- <p class="text-uppercase blue-text"><strong>Graphic designer</strong></p> -->
                     <!-- <p class="grey-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
                             consectetur,
                             adipisci sed quia non numquam modi tempora eius.</p> -->
-                </div>
+                </a>
                 <!-- Grid column -->
                 <!-- Grid column -->
-                <div class="col-md-2 m-1 p-1 ">
+                <a class="col-md-2 m-1 p-1 " onclick="fetchmemberdetails('arthanareeswaran')">
                     <div class="avatar mx-auto">
-                        <img src="https://raw.githubusercontent.com/ThayalanGR/dotcc/master/assets/img/avatar_2x.png"
-                            style="max-width: 150px;" class="rounded-circle z-depth-1" alt="avatar">
+                        <img src="./assets/image/directors/arthanareeswaran.jpg" style="max-width: 150px; max-height: 150px;"
+                            class="rounded-circle z-depth-1" alt="avatar">
                     </div>
                     <p class="font-weight-normal mt-2 mb-2">Dr. Arthanareeswaran</p>
                     <!-- <p class="text-uppercase blue-text"><strong>Graphic designer</strong></p> -->
                     <!-- <p class="grey-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
                             consectetur,
                             adipisci sed quia non numquam modi tempora eius.</p> -->
-                </div>
+                </a>
                 <!-- Grid column -->
                 <!-- Grid column -->
-                <div class="col-md-2 m-1 p-1 ">
+                <a class="col-md-2 m-1 p-1 " onclick="fetchmemberdetails('sumathy')">
                     <div class="avatar mx-auto">
-                        <img src="https://raw.githubusercontent.com/ThayalanGR/dotcc/master/assets/img/avatar_2x.png"
-                            style="max-width: 150px;" class="rounded-circle z-depth-1" alt="avatar">
+                        <img src="./assets/image/directors/sumathy.jpg" style="max-width: 150px; max-height: 150px;"
+                            class="rounded-circle z-depth-1" alt="avatar">
                     </div>
                     <p class="font-weight-normal mt-2 mb-2">Dr. Sumathy</p>
                     <!-- <p class="text-uppercase blue-text"><strong>Graphic designer</strong></p> -->
                     <!-- <p class="grey-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
                             consectetur,
                             adipisci sed quia non numquam modi tempora eius.</p> -->
-                </div>
+                </a>
                 <!-- Grid column -->
                 <!-- Grid column -->
-                <div class="col-md-2 m-1 p-1 ">
+                <a class="col-md-2 m-1 p-1 " onclick="fetchmemberdetails('veerapandian')">
                     <div class="avatar mx-auto">
-                        <img src="https://raw.githubusercontent.com/ThayalanGR/dotcc/master/assets/img/avatar_2x.png"
-                            style="max-width: 150px;" class="rounded-circle z-depth-1" alt="avatar">
+                        <img src="./assets/image/directors/veerapandian.png" style="max-width: 150px; max-height: 150px;"
+                            class="rounded-circle z-depth-1" alt="avatar">
                     </div>
                     <p class="font-weight-normal mt-2 mb-2">Dr. Veerapandian</p>
                     <!-- <p class="text-uppercase blue-text"><strong>Graphic designer</strong></p> -->
                     <!-- <p class="grey-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
                             consectetur,
                             adipisci sed quia non numquam modi tempora eius.</p> -->
-                </div>
+                </a>
                 <!-- Grid column -->
 
                 <!-- Grid column -->
-                <div class="col-md-2 m-1 p-1 ">
+                <a class="col-md-2 m-1 p-1 " onclick="fetchmemberdetails('ilavarasan')">
                     <div class="avatar mx-auto">
-                        <img src="https://raw.githubusercontent.com/ThayalanGR/dotcc/master/assets/img/avatar_2x.png"
-                            style="max-width: 150px;" class="rounded-circle z-depth-1" alt="avatar">
+                        <img src="./assets/image/directors/ilavarasan.jpg" style="max-width: 150px; max-height: 150px;"
+                            class="rounded-circle z-depth-1" alt="avatar">
                     </div>
                     <p class="font-weight-normal mt-2 mb-2">Dr. Ilavarasan</p>
                     <!-- <p class="text-uppercase blue-text"><strong>Graphic designer</strong></p> -->
                     <!-- <p class="grey-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
                             consectetur,
                             adipisci sed quia non numquam modi tempora eius.</p> -->
-                </div>
+                </a>
 
             </div>
 
@@ -514,13 +477,13 @@
     </div>
 
     <!-- <section id="careerwithus" class="section block-7"> -->
-    <div class="container-fluid row tempting-azure-gradient scrollme" style="height: 100vh;">
-        <div class="col d-flex justify-content-center align-items-center flex-column wow fadeInUp">
+    <div class="container-fluid row black scrollme m-0" style="height: 100vh; width: 100vw; ">
+        <div class="col d-flex justify-content-center align-items-center flex-column wow fadeInUp text-white">
             <!-- Section heading -->
 
             <div class="row mt-5 pt-4">
                 <div class="col">
-                    <p class="font-weight-normal h3-responsive my-3 mx-auto mb-3 text-warning">Organisation Chart</p>
+                    <p class="font-weight-bold h3-responsive my-3 mx-auto mb-3 text-warning">Organisation Chart</p>
 
                 </div>
             </div>
@@ -532,132 +495,92 @@
 
                 <!-- Grid column -->
                 <!-- Grid column -->
-                <div class="col-12 text-center ">
+                <a onclick="fetchmemberdetails('swaminathan')" class="col-12 text-center">
                     <div class="avatar mx-auto">
-                        <img src="https://raw.githubusercontent.com/ThayalanGR/dotcc/master/assets/img/avatar_2x.png"
-                            style="max-width: 150px;" class="rounded-circle z-depth-1" alt="avatar">
+                        <img src="./assets/image/directors/swaminathan.jpg" style="max-width: 150px; max-height: 150px;"
+                            class="rounded-circle z-depth-1" alt="avatar">
                     </div>
                     <p class="font-weight-normal mt-2 mb-2">A. Swaminathan</p>
                     <p class="text-uppercase blue-text"><strong>Founder and CEO</strong></p>
                     <!-- <p class="grey-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
                                                                     consectetur,
                                                                     adipisci sed quia non numquam modi tempora eius.</p> -->
-                </div>
-                <!-- Grid column -->
-                <!-- Grid column -->
-                <div class="col-md-2 m-1 p-1 ">
+                </a>
+
+
+
+
+                <a class="col-md-2 m-1 p-1 " onclick="fetchmemberdetails('shibil')">
                     <div class="avatar mx-auto">
                         <img src="https://raw.githubusercontent.com/ThayalanGR/dotcc/master/assets/img/avatar_2x.png"
-                            style="max-width: 150px;" class="rounded-circle z-depth-1" alt="avatar">
+                            style="max-width: 150px; max-height: 150px;" class="rounded-circle z-depth-1" alt="avatar">
+                        <!-- <img src="./assets/image/directors/shibil.jpg" style="max-width: 150px; max-height: 150px;"
+                            class="rounded-circle z-depth-1" alt="avatar"> -->
                     </div>
-                    <p class="font-weight-normal mt-2 mb-2">L. S. Shibil Jeyanthi Prasad </p>
+                    <p class="font-weight-normal mt-2 mb-2"> L. S. Shibil Jeyanthi Prasad </p>
                     <!-- <p class="text-uppercase blue-text"><strong>Graphic designer</strong></p> -->
                     <!-- <p class="grey-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-                                            consectetur,
-                                            adipisci sed quia non numquam modi tempora eius.</p> -->
-                </div>
+                                                consectetur,
+                                                adipisci sed quia non numquam modi tempora eius.</p> -->
+                </a>
                 <!-- Grid column -->
-                <!-- Grid column -->
-                <div class="col-md-2 m-1 p-1 ">
+
+
+                <a class="col-md-2 m-1 p-1 " onclick="fetchmemberdetails('siva')">
                     <div class="avatar mx-auto">
                         <img src="https://raw.githubusercontent.com/ThayalanGR/dotcc/master/assets/img/avatar_2x.png"
-                            style="max-width: 150px;" class="rounded-circle z-depth-1" alt="avatar">
+                            style="max-width: 150px; max-height: 150px;" class="rounded-circle z-depth-1" alt="avatar">
+                        <!-- <img src="./assets/image/directors/siva.jpg" style="max-width: 150px; max-height: 150px;" class="rounded-circle z-depth-1"
+                            alt="avatar"> -->
+                    </div>
+                    <p class="font-weight-normal mt-2 mb-2">Siva Kumar</p>
+                    <!-- <p class="text-uppercase blue-text"><strong>Graphic designer</strong></p> -->
+                    <!-- <p class="grey-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                                                consectetur,
+                                                adipisci sed quia non numquam modi tempora eius.</p> -->
+                </a>
+
+                <a class="col-md-2 m-1 p-1 " onclick="fetchmemberdetails('thayalan')">
+                    <div class="avatar mx-auto">
+                        <img src="https://raw.githubusercontent.com/ThayalanGR/dotcc/master/assets/img/avatar_2x.png"
+                            style="max-width: 150px; max-height: 150px;" class="rounded-circle z-depth-1" alt="avatar">
+                        <!-- <img src="./assets/image/directors/thayalan.jpg" style="max-width: 150px; max-height: 150px;"
+                            class="rounded-circle z-depth-1" alt="avatar"> -->
+                    </div>
+                    <p class="font-weight-normal mt-2 mb-2">ThayalanGR</p>
+                </a>
+                <!-- Grid column -->
+
+                <a class="col-md-2 m-1 p-1 " onclick="fetchmemberdetails('yogesh')">
+                    <div class="avatar mx-auto">
+                        <img src="https://raw.githubusercontent.com/ThayalanGR/dotcc/master/assets/img/avatar_2x.png"
+                            style="max-width: 150px; max-height: 150px;" class="rounded-circle z-depth-1" alt="avatar">
+                        <!-- <img src="./assets/image/directors/yogesh.jpg" style="max-width: 150px; max-height: 150px;"
+                            class="rounded-circle z-depth-1" alt="avatar"> -->
                     </div>
                     <p class="font-weight-normal mt-2 mb-2">V. Yogesh </p>
                     <!-- <p class="text-uppercase blue-text"><strong>Graphic designer</strong></p> -->
                     <!-- <p class="grey-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
                                             consectetur,
                                             adipisci sed quia non numquam modi tempora eius.</p> -->
-                </div>
+                </a>
                 <!-- Grid column -->
                 <!-- Grid column -->
-                <div class="col-md-2 m-1 p-1 ">
+                <!-- Grid column -->
+                <a class="col-md-2 m-1 p-1 " onclick="fetchmemberdetails('merlin')">
                     <div class="avatar mx-auto">
                         <img src="https://raw.githubusercontent.com/ThayalanGR/dotcc/master/assets/img/avatar_2x.png"
-                            style="max-width: 150px;" class="rounded-circle z-depth-1" alt="avatar">
+                            style="max-width: 150px; max-height: 150px;" class="rounded-circle z-depth-1" alt="avatar">
+                        <!-- <img src="./assets/image/directors/merlin.jpg" style="max-width: 150px; max-height: 150px;"
+                            class="rounded-circle z-depth-1" alt="avatar"> -->
                     </div>
-                    <p class="font-weight-normal mt-2 mb-2">Jenifer</p>
+                    <p class="font-weight-normal mt-2 mb-2">Merlin Selvan</p>
                     <!-- <p class="text-uppercase blue-text"><strong>Graphic designer</strong></p> -->
                     <!-- <p class="grey-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
                                             consectetur,
                                             adipisci sed quia non numquam modi tempora eius.</p> -->
-                </div>
+                </a>
                 <!-- Grid column -->
-                <!-- Grid column -->
-                <div class="col-md-2 m-1 p-1 ">
-                    <div class="avatar mx-auto">
-                        <img src="https://raw.githubusercontent.com/ThayalanGR/dotcc/master/assets/img/avatar_2x.png"
-                            style="max-width: 150px;" class="rounded-circle z-depth-1" alt="avatar">
-                    </div>
-                    <p class="font-weight-normal mt-2 mb-2">Galwin</p>
-                    <!-- <p class="text-uppercase blue-text"><strong>Graphic designer</strong></p> -->
-                    <!-- <p class="grey-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-                                            consectetur,
-                                            adipisci sed quia non numquam modi tempora eius.</p> -->
-                </div>
-                <!-- Grid column -->
-                <!-- Grid column -->
-                <div class="col-md-2 m-1 p-1 ">
-                    <div class="avatar mx-auto">
-                        <img src="https://raw.githubusercontent.com/ThayalanGR/dotcc/master/assets/img/avatar_2x.png"
-                            style="max-width: 150px;" class="rounded-circle z-depth-1" alt="avatar">
-                    </div>
-                    <p class="font-weight-normal mt-2 mb-2">A. Karmuhil</p>
-                    <!-- <p class="text-uppercase blue-text"><strong>Graphic designer</strong></p> -->
-                    <!-- <p class="grey-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-                                            consectetur,
-                                            adipisci sed quia non numquam modi tempora eius.</p> -->
-                </div>
-                <!-- Grid column -->
-                <!-- Grid column -->
-                <div class="col-md-2 m-1 p-1 ">
-                    <div class="avatar mx-auto">
-                        <img src="https://raw.githubusercontent.com/ThayalanGR/dotcc/master/assets/img/avatar_2x.png"
-                            style="max-width: 150px;" class="rounded-circle z-depth-1" alt="avatar">
-                    </div>
-                    <p class="font-weight-normal mt-2 mb-2">R. Vijayalakshmi</p>
-                    <!-- <p class="text-uppercase blue-text"><strong>Graphic designer</strong></p> -->
-                    <!-- <p class="grey-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-                                            consectetur,
-                                            adipisci sed quia non numquam modi tempora eius.</p> -->
-                </div>
-                <!-- Grid column -->
-
-                <!-- Grid column -->
-                <div class="col-md-2 m-1 p-1 ">
-                    <div class="avatar mx-auto">
-                        <img src="https://raw.githubusercontent.com/ThayalanGR/dotcc/master/assets/img/avatar_2x.png"
-                            style="max-width: 150px;" class="rounded-circle z-depth-1" alt="avatar">
-                    </div>
-                    <p class="font-weight-normal mt-2 mb-2">Siva Kumar</p>
-                    <!-- <p class="text-uppercase blue-text"><strong>Graphic designer</strong></p> -->
-                    <!-- <p class="grey-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-                                            consectetur,
-                                            adipisci sed quia non numquam modi tempora eius.</p> -->
-                </div>
-                <div class="col-md-2 m-1 p-1 ">
-                    <div class="avatar mx-auto">
-                        <img src="https://raw.githubusercontent.com/ThayalanGR/dotcc/master/assets/img/avatar_2x.png"
-                            style="max-width: 150px;" class="rounded-circle z-depth-1" alt="avatar">
-                    </div>
-                    <p class="font-weight-normal mt-2 mb-2">ThayalanGR</p>
-                    <!-- <p class="text-uppercase blue-text"><strong>Graphic designer</strong></p> -->
-                    <!-- <p class="grey-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-                                                consectetur,
-                                                adipisci sed quia non numquam modi tempora eius.</p> -->
-                </div>
-                <!-- Grid column -->
-                <div class="col-md-2 m-1 p-1 ">
-                    <div class="avatar mx-auto">
-                        <img src="https://raw.githubusercontent.com/ThayalanGR/dotcc/master/assets/img/avatar_2x.png"
-                            style="max-width: 150px;" class="rounded-circle z-depth-1" alt="avatar">
-                    </div>
-                    <p class="font-weight-normal mt-2 mb-2">Vinay</p>
-                    <!-- <p class="text-uppercase blue-text"><strong>Graphic designer</strong></p> -->
-                    <!-- <p class="grey-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-                                                    consectetur,
-                                                    adipisci sed quia non numquam modi tempora eius.</p> -->
-                </div>
 
 
             </div>
@@ -669,13 +592,11 @@
 
 
 
-    </section>
-
-    <section data-section-name="contactus" class="section block-6 pt-4 scrollme" style="position: relative; background: rgb(28,35,49);">
+    <section data-section-name="contactus" class="section block-6 pt-4 scrollme black" style="position: relative; width: 100vw; ">
 
         <div class="container-fluid mt-5 p-md-5">
             <div class="row wow fadeInUp">
-                <div class="col text-primary text-center h3-responsive font-weight-normal">
+                <div class="col text-warning text-center h3-responsive font-weight-bold">
                     Contact us
                     <hr>
                 </div>
@@ -815,7 +736,6 @@
             </div>
         </div>
 
-        </div>
         <div class="text-warning" style=" position: absolute; bottom: 0; display: flex; justify-content: center; width: 100vw; padding: 10px;">
             &copy;2018 Copyright: sparkzeon.com
         </div>
@@ -1006,6 +926,32 @@
 
 
 
+    <!-- user modal -->
+
+    <div class="modal fade" id="directors" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div id="maincontent" class="container row d-flex justify-content-center align-items-center flex-row">
+
+
+
+
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
     <!-- Bootstrap tooltips -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
     <!-- Bootstrap core JavaScript -->
@@ -1016,6 +962,126 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOuaLCbuZtnDlBF7efBCZVxdnIT3tVBzE&callback=initMap"
         async defer></script>
     <script type="text/javascript" src="./assets/script/index.js"></script>
+
+    <script>
+        $('#modalContactForm').modal('handleUpdate')
+
+        $('#modalContactForm').on('shown.bs.modal', function (e) {
+            // do something...
+            $('body').addClass("no-scroll")
+        })
+
+        $('#modalContactForm').on('hide.bs.modal', function (e) {
+            // do something...
+            $('body').removeClass("no-scroll")
+        })
+
+
+
+        function person(name, details, link, imageLink) {
+            this.name = name
+            this.details = details
+            this.link = link
+            this.imageLink = imageLink
+        }
+
+
+        const swaminathan = new person(`A. Swaminathan`,
+            `A. Swaminathan was born on 5th of October 1990 in Thanjavur, Tamilnadu  India. He pursued his Bachelor of Technology as Undergraduate degree in Information Technology from Anna University Chennai, Tamilnadu, India in the year 2012. He pursued his Masters in Computer Science & Engineering as Post-graduate degree from Anna University in the year 2014. He joined National Institute of Technology, Tiruchirappalli, Tamilnadu, India NITT, as a Junior Research Fellow under MHRD (Ministry of Human Resource Development) project in May 2014. At present, he is a Research Scholar in the Department of Computer Applications in NITT. His research domain is Image and Video processing with Artificial Intelligence. His area of interests are Clustering Techniques, Data mining, and MachineLearning.`,
+            ``, `swaminathan.jpg`)
+
+        const shibil = new person(`L. S. Shibil Jeyanthi Prasad`,
+            `L. S. Shibil Jeyanthi Prasad was born on 18th of July 1990 in Nagercoil, Tamilnadu, India. She pursued her Bachelor of Engineering in Electronics and Communication Engineering from Anna University Chennai, Tamilnadu, India in the year 2012. She pursued her Master of Engineering in Applied Electronics from Anna University in the year 2014. She pursued her Master in Business Administration degree in Human Resources from Manonmaniam Sundranar University Tirunelveli, Tamilnadu India in the year 2016.`,
+            ``, ``)
+
+
+        const siva = new person(`siva kumar`, ``, ``, `siva.jpg`)
+
+        const thayalan = new person(`Thayalan G R`, `G .R. Thayalan is Full Stack Developer.`,
+            `https://github.com/ThayalanGR`, `thayalan.jpg`)
+
+        const yogesh = new person(`V. Yogesh `, ``, ``, `yogesh.jpg`)
+
+        const merlin = new person(`Merlin Selvan`, ``, ``, `merlin.jpg`)
+
+
+        //board of directors
+
+        const vadivel = new person(`Dr. A. Vadivel`, ``, `https://srmap.edu.in/faculty/dr-a-vadivel/`, `vadivel.jpg`)
+        const punniyamoorthy = new person(`Dr.M.Punniyamoorthy`, ``, ``, `punniyamoorthy.jpg`)
+
+        const michael = new person(`Dr. Michael Arock`, ``,
+            `https://www.nitt.edu/home/academics/departments/ca/facultymca/assocprofessors/michael/`, `michael.jpg`
+        )
+        const arthanareeswaran = new person(`Dr. Arthanareeswaran`, ``,
+            `https://www.nitt.edu/home/academics/departments/chem/chemfaculty/aoprof/arthanaari/`,
+            `arthanareeswaran.jpg`)
+        const ganesh = new person(`Dr. Ganesh`, ``, `https://in.linkedin.com/in/koganesh`, `ganesh.jpg`)
+        const sumathy = new person(`Dr. Sumathy`, ``,
+            `http://www.csbdu.in/index.php/en/multilingual-support/66-p-sumathy`, `sumathy.jpg`)
+        const veerapandian = new person(`Dr. Veerapandian`, ``, `http://drvee.in/`, `veerapandian.png`)
+        const ilavarasan = new person(`Dr. Ilavarasan`, ``, `http://www.vivekaiasacademy.com/academy-overview/`,
+            `ilavarasan.jpg`)
+
+
+
+        function fetchmemberdetails(name) {
+            // alert(0)
+
+            const mainRef = document.getElementById("maincontent")
+            console.log(eval(name).name)
+
+
+
+            let buildPerson =
+                `  <div class="text-center m-4" style="width: 100%; overflow-wrap: inherit;">
+                        <div class="avatar mx-auto">
+                            <img src="assets/image/directors/${eval(name).imageLink}"
+                                style="max-width: 150px; max-height: 150px;" class="rounded-circle z-depth-1" alt="avatar">
+                        </div>
+                        <p class="font-weight-normal mt-2 mb-2 text-center  text-primary font-weight-bold">${eval(name).name}</p>`
+
+            if (name.details != ``) {
+                buildPerson += `<p class="font-weight-normal p-3 text-center">${eval(name).details}</p>`
+            }
+
+            if (name.link != ``) {
+                buildPerson +=
+                    `<a class="btn btn-md btn-primary " href="${eval(name).link}" target = "_blank">View Profile</a>`
+            }
+
+
+            buildPerson += `</div>`;
+
+            mainRef.innerHTML = buildPerson
+
+
+
+            $('#directors').modal('show')
+
+
+
+
+
+
+
+
+
+        }
+
+
+
+        // console.log(man.name)
+
+
+        window.addEventListener('scroll', function (e) {
+            if ($(window).scrollTop() <= 50) {
+                $('.wow').removeClass('animated');
+                $('.wow').removeAttr('style');
+                new WOW().init();
+            }
+        });
+    </script>
 </body>
 
 </html>

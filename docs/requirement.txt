@@ -1,0 +1,20 @@
+[x]logo rotation
+
+[x]animation on scroll
+
+
+[x]carrers button link trans
+
+
+[x]our servicess - black images change
+
+[x]delete text in services
+
+[x]mother ther del
+
+
+[x]href link addition
+
+
+
+[x]social links
