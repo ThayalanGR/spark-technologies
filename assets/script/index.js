@@ -113,7 +113,7 @@ _('career-form').addEventListener("submit", event => {
   let education = event.target.elements["education"].value
   let occupation = event.target.elements["occupation"].value
   let contact1 = event.target.elements["mobile1"].value
-  let contact2 = event.target.elements["mobile2"].value
+  // let contact2 = event.target.elements["mobile2"].value
   let mail = event.target.elements["email"].value
   let address = event.target.elements["address-text"].value
   let district = event.target.elements["district"].value
@@ -122,8 +122,8 @@ _('career-form').addEventListener("submit", event => {
   let pincode = event.target.elements["pincode"].value
 
 
-  console.log(name, mname, fname, sex, date, relegion, community, marital, blood, education, occupation, contact1, contact2, mail, address, district, state, country, pincode)
-  const apiUrl = `../../restapi/career.php?name=${name}&mname=${mname}&fname=${fname}&sex=${sex}&date=${date}&relegion=${relegion}&community=${community}&marital=${marital}&blood=${blood}&education=${education}&occupation=${occupation}&contact1=${contact1}&contact2=${contact2}&mail=${mail}&address=${address}&district=${district}&state=${state}&country=${country}&pincode=${pincode}`
+  console.log(name, mname, fname, sex, date, relegion, community, marital, blood, education, occupation, contact1, mail, address, district, state, country, pincode)
+  const apiUrl = `../../restapi/career.php?name=${name}&mname=${mname}&fname=${fname}&sex=${sex}&date=${date}&relegion=${relegion}&community=${community}&marital=${marital}&blood=${blood}&education=${education}&occupation=${occupation}&contact1=${contact1}&mail=${mail}&address=${address}&district=${district}&state=${state}&country=${country}&pincode=${pincode}`
   console.log(apiUrl)
   fetch(apiUrl)
     .then(resp => resp.json())

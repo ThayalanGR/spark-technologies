@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 07, 2018 at 09:43 AM
+-- Generation Time: Nov 13, 2018 at 02:14 PM
 -- Server version: 10.1.35-MariaDB
 -- PHP Version: 7.2.9
 
@@ -42,7 +42,6 @@ CREATE TABLE `tbl_career` (
   `education` varchar(255) NOT NULL,
   `occupation` varchar(255) NOT NULL,
   `conatct_1` int(11) NOT NULL,
-  `contact_2` int(11) DEFAULT NULL,
   `email` varchar(50) NOT NULL,
   `address` varchar(255) NOT NULL,
   `district` varchar(50) NOT NULL,
