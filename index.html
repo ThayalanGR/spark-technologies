@@ -1004,20 +1004,20 @@
             ``, ``)
 
 
-        const siva = new person(`siva kumar`, ``, ``, `siva.jpg`)
+        const siva = new person(`siva kumar`, ``, ``, ``)
 
-        const thayalan = new person(`Thayalan G R`, `G .R. Thayalan is Full Stack Developer.`,
+        const thayalan = new person(`Thayalan G R`, `G .R. Thayalan is a Full Stack Developer.`,
             `https://github.com/ThayalanGR`, `thayalan.jpg`)
 
-        const yogesh = new person(`V. Yogesh `, ``, ``, `yogesh.jpg`)
+        const yogesh = new person(`V. Yogesh `, ``, ``, ``)
 
-        const merlin = new person(`Merlin Selvan`, ``, ``, `merlin.jpg`)
+        const merlin = new person(`Merlin Selvan`, ``, ``, ``)
 
 
         //board of directors
 
         const vadivel = new person(`Dr. A. Vadivel`, ``, `https://srmap.edu.in/faculty/dr-a-vadivel/`, `vadivel.jpg`)
-        const punniyamoorthy = new person(`Dr.M.Punniyamoorthy`, ``, ``, `punniyamoorthy.jpg`)
+        const punniyamoorthy = new person(`Dr.M.Punniyamoorthy`, ``, ``, ``)
 
         const michael = new person(`Dr. Michael Arock`, ``,
             `https://www.nitt.edu/home/academics/departments/ca/facultymca/assocprofessors/michael/`, `michael.jpg`
@@ -1039,22 +1039,24 @@
 
             const mainRef = document.getElementById("maincontent")
             console.log(eval(name).name)
-
+            
+            var avatar = `https://raw.githubusercontent.com/ThayalanGR/dotcc/master/assets/img/avatar_2x.png`
+            var image = `assets/image/directors/`
 
 
             let buildPerson =
                 `  <div class="text-center m-4" style="width: 100%; overflow-wrap: inherit;">
                         <div class="avatar mx-auto">
-                            <img src="assets/image/directors/${eval(name).imageLink}"
+                            <img src="${(eval(name).imageLink.length > 3)?image+eval(name).imageLink : avatar}"
                                 style="max-width: 150px; max-height: 150px;" class="rounded-circle z-depth-1" alt="avatar">
                         </div>
                         <p class="font-weight-normal mt-2 mb-2 text-center  text-primary font-weight-bold">${eval(name).name}</p>`
 
-            if (name.details != ``) {
+            if (eval(name).details.length > 5) {
                 buildPerson += `<p class="font-weight-normal p-3 text-center">${eval(name).details}</p>`
             }
 
-            if (name.link != ``) {
+            if (eval(name).link.length > 5) {
                 buildPerson +=
                     `<a class="btn btn-md btn-primary " href="${eval(name).link}" target = "_blank">View Profile</a>`
             }
