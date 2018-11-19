@@ -77,12 +77,22 @@
     <link rel="stylesheet" href="./assets/style/index.css">
 
     <style>
-    
-    @media (max-width: 580px) {
-        #image-left {
-            display: none;
+
+        #navbarNav {
+            font-size: 18px;
         }
-    }
+
+        @media (max-width: 580px) {
+            #image-left {
+                display: none;
+            }
+         }
+
+        @media (max-height: 450px) {
+            #image-left {
+                display: none;
+            }
+        }
     </style>
 </head>
 
@@ -100,11 +110,27 @@
         <button class="navbar-toggler p-1 m-0 btn btn-sm btn-outline-primary shadow-sm rounded-circle bg-white" type="button"
             data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNavDropdown" aria-expanded="false"
             aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon bg-white rounded"></span>
         </button>
         <div class="collapse navbar-collapse scrollspy d-flex-md justify-content-end" id="navbarNav">
             <ul class="smooth-scroll nav nav-pills  pagination">
-                <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+
+                <li class="btn-group nav-item nav-link text-primary">
+                    <a class="dropdown-toggle nav-item" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Home
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right bg-transparent">
+                        <a href="#home" class="dropdown-item nav-link active font-weight-bold btn btn-outline-primary">About
+                            us</a>
+                        <a href="#bod" class="dropdown-item nav-link font-weight-bold  btn-outline-primary">Board of
+                            Directors</a>
+                        <a href="#oc" class="dropdown-item nav-link font-weight-bold  btn-outline-primary">Organisation
+                            Chart</a>
+                    </div>
+                </li>
+
+
+                <!-- <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li> -->
                 <li class="nav-item"><a class="nav-link " href="#services">Services</a></li>
                 <li class="nav-item"><a class="nav-link " href="#technologies">Technologies</a></li>
                 <li class="nav-item"><a class="nav-link " href="#projects">Our
@@ -117,7 +143,7 @@
 
         </div>
 
-    </nav> 
+    </nav>
 
     <!-- <section class="section block-1" id="home"> -->
     <div class="view zoom full-page-intro section scrollme black" data-section-name="home">
@@ -127,7 +153,7 @@
             <div class="container-fluid">
                 <div class="row text-center">
                     <div id="logo-large" class="pt-5 text-center col-md-5 d-flex  justify-content-center align-items-center">
-                        <img src="./design/trans.png" id="image-left"  class="animated rotateIn wow img-handler shadow-lg img-fluid"
+                        <img src="./design/trans.png" id="image-left" class="animated rotateIn wow img-handler shadow-lg img-fluid"
                             alt="">
                     </div>
                     <div class="col-sm-12 col-md-7 d-flex justify-content-center flex-column align-items-center p-5">
@@ -152,9 +178,258 @@
     <!-- </section> -->
 
 
+    <div class="container-fluid row black scrollme " data-section-name="bod" style="height: 100vh; width: 100vw;">
+        <div class="col d-flex justify-content-center align-items-center flex-column mt-5 ">
+            <div class="row">
+                <div class="col">
+                    <p class="font-weight-bold h3-responsive my-3 mx-auto mb-3 text-warning">Board of Directors </h5><br><br>
+                        <!-- Section description -->
+                    </p>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center align-items-center wow fadeInUp text-center text-white">
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <a class="col-md-2 " onclick="fetchmemberdetails('punniyamoorthy')">
+                    <div class="avatar mx-auto">
+                        <img src="./assets/image/directors/punniyamoorthy.jpg" style="max-width: 150px; max-height: 150px;"
+                            class="rounded-circle z-depth-1" alt="avatar">
+                    </div>
+                    <p class="font-weight-normal mt-2 mb-2">Dr. M. Punniyamoorthy</p>
+                    <!-- <p class="text-uppercase blue-text"><strong>Graphic designer</strong></p> -->
+                    <!-- <p class="grey-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                                                    consectetur,
+                                                    adipisci sed quia non numquam modi tempora eius.</p> -->
+                </a>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <a class="col-md-2 m-1 p-1 " onclick="fetchmemberdetails('ganesh')">
+                    <div class="avatar mx-auto">
+                        <img src="./assets/image/directors/ganesh.jpg" style="max-width: 150px; max-height: 150px;"
+                            class="rounded-circle z-depth-1" alt="avatar">
+                    </div>
+                    <p class="font-weight-normal mt-2 mb-2">Dr. K. Ganesh</p>
+                    <!-- <p class="text-uppercase blue-text"><strong>Graphic designer</strong></p> -->
+                    <!-- <p class="grey-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                            consectetur,
+                            adipisci sed quia non numquam modi tempora eius.</p> -->
+                </a>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <a class="col-md-2 m-1 p-1 " onclick="fetchmemberdetails('michael')">
+                    <div class="avatar mx-auto">
+                        <img src="./assets/image/directors/michael.jpg" style="max-width: 150px; max-height: 150px;"
+                            class="rounded-circle z-depth-1" alt="avatar">
+                    </div>
+                    <p class="font-weight-normal mt-2 mb-2">Dr. Michael Arock </p>
+                    <!-- <p class="text-uppercase blue-text"><strong>Graphic designer</strong></p> -->
+                    <!-- <p class="grey-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                            consectetur,
+                            adipisci sed quia non numquam modi tempora eius.</p> -->
+                </a>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <a class="col-md-2 m-1 p-1 " onclick="fetchmemberdetails('vadivel')">
+                    <div class="avatar mx-auto">
+                        <img src="./assets/image/directors/vadivel.jpg" style="max-width: 150px; max-height: 150px;"
+                            class="rounded-circle z-depth-1" alt="avatar">
+                    </div>
+                    <p class="font-weight-normal mt-2 mb-2">Dr. A. Vadivel</p>
+                    <!-- <p class="text-uppercase blue-text"><strong>Graphic designer</strong></p> -->
+                    <!-- <p class="grey-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                            consectetur,
+                            adipisci sed quia non numquam modi tempora eius.</p> -->
+                </a>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <a class="col-md-2 m-1 p-1 " onclick="fetchmemberdetails('arthanareeswaran')">
+                    <div class="avatar mx-auto">
+                        <img src="./assets/image/directors/arthanareeswaran.jpg" style="max-width: 150px; max-height: 150px;"
+                            class="rounded-circle z-depth-1" alt="avatar">
+                    </div>
+                    <p class="font-weight-normal mt-2 mb-2">Dr. G. Arthanareeswaran</p>
+                    <!-- <p class="text-uppercase blue-text"><strong>Graphic designer</strong></p> -->
+                    <!-- <p class="grey-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                            consectetur,
+                            adipisci sed quia non numquam modi tempora eius.</p> -->
+                </a>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <a class="col-md-2 m-1 p-1 " onclick="fetchmemberdetails('sumathy')">
+                    <div class="avatar mx-auto">
+                        <img src="./assets/image/directors/sumathy.jpg" style="max-width: 150px; max-height: 150px;"
+                            class="rounded-circle z-depth-1" alt="avatar">
+                    </div>
+                    <p class="font-weight-normal mt-2 mb-2">Dr. P. Sumathy</p>
+                    <!-- <p class="text-uppercase blue-text"><strong>Graphic designer</strong></p> -->
+                    <!-- <p class="grey-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                            consectetur,
+                            adipisci sed quia non numquam modi tempora eius.</p> -->
+                </a>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <a class="col-md-2 m-1 p-1 " onclick="fetchmemberdetails('veerapandian')">
+                    <div class="avatar mx-auto">
+                        <img src="./assets/image/directors/veerapandian.png" style="max-width: 150px; max-height: 150px;"
+                            class="rounded-circle z-depth-1" alt="avatar">
+                    </div>
+                    <p class="font-weight-normal mt-2 mb-2">Dr. Veerapandian</p>
+                    <!-- <p class="text-uppercase blue-text"><strong>Graphic designer</strong></p> -->
+                    <!-- <p class="grey-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                            consectetur,
+                            adipisci sed quia non numquam modi tempora eius.</p> -->
+                </a>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <a class="col-md-2 m-1 p-1 " onclick="fetchmemberdetails('ilavarasan')">
+                    <div class="avatar mx-auto">
+                        <img src="./assets/image/directors/ilavarasan.jpg" style="max-width: 150px; max-height: 150px;"
+                            class="rounded-circle z-depth-1" alt="avatar">
+                    </div>
+                    <p class="font-weight-normal mt-2 mb-2">Dr. A.       Ilavarasan</p>
+                    <!-- <p class="text-uppercase blue-text"><strong>Graphic designer</strong></p> -->
+                    <!-- <p class="grey-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                            consectetur,
+                            adipisci sed quia non numquam modi tempora eius.</p> -->
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+
+
+    </div>
+
+    <!-- <section id="careerwithus" class="section block-7"> -->
+    <div class="container-fluid row black scrollme m-0" data-section-name="oc" style="height: 100vh; width: 100vw; ">
+        <div class="col d-flex justify-content-center align-items-center flex-column wow fadeInUp text-white">
+            <!-- Section heading -->
+
+            <div class="row mt-5 pt-4">
+                <div class="col">
+                    <p class="font-weight-bold h3-responsive my-3 mx-auto mb-3 text-warning">Organisation Chart</p>
+
+                </div>
+            </div>
+            <!-- Section description -->
+            <!-- <p class="grey-text w-responsive mx-auto mb-5"></p> -->
+
+            <!-- Grid row -->
+            <div class="row d-flex justify-content-center align-items-center text-center">
+
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <a onclick="fetchmemberdetails('swaminathan')" class="col-12 text-center">
+                    <div class="avatar mx-auto">
+                        <img src="./assets/image/directors/swaminathan.jpg" style="max-width: 150px; max-height: 150px;"
+                            class="rounded-circle z-depth-1" alt="avatar">
+                    </div>
+                    <p class="font-weight-normal mt-2 mb-2">A. Swaminathan</p>
+                    <p class="text-uppercase blue-text"><strong>Founder and CEO</strong></p>
+                    <!-- <p class="grey-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                                                                    consectetur,
+                                                                    adipisci sed quia non numquam modi tempora eius.</p> -->
+                </a>
+
+
+
+                <!-- Grid column -->
+                <a class="col-md-2 m-1 p-1 " onclick="fetchmemberdetails('shibil')">
+                    <div class="avatar mx-auto">
+                        <!-- <img src="https://raw.githubusercontent.com/ThayalanGR/dotcc/master/assets/img/avatar_2x.png"
+                            style="max-width: 150px; max-height: 150px;" class="rounded-circle z-depth-1" alt="avatar"> -->
+                        <img src="./assets/image/directors/shibil.jpg" style="max-width: 150px; max-height: 150px;"
+                            class="rounded-circle z-depth-1" alt="avatar">
+                    </div>
+                    <p class="font-weight-normal mt-2 mb-2"> L. S. Shibil Jeyanthi Prasad </p>
+                    <!-- <p class="text-uppercase blue-text"><strong>Graphic designer</strong></p> -->
+                    <!-- <p class="grey-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                                                consectetur,
+                                                adipisci sed quia non numquam modi tempora eius.</p> -->
+                </a>
+
+                <a class="col-md-2 m-1 p-1 " onclick="fetchmemberdetails('siva')">
+                    <div class="avatar mx-auto">
+                        <!-- <img src="https://raw.githubusercontent.com/ThayalanGR/dotcc/master/assets/img/avatar_2x.png"
+                            style="max-width: 150px; max-height: 150px;" class="rounded-circle z-depth-1" alt="avatar"> -->
+                        <img src="./assets/image/directors/siva.jpg" style="max-width: 150px; max-height: 150px;" class="rounded-circle z-depth-1"
+                            alt="avatar">
+                    </div>
+                    <p class="font-weight-normal mt-2 mb-2">Siva Kumar</p>
+                    <!-- <p class="text-uppercase blue-text"><strong>Graphic designer</strong></p> -->
+                    <!-- <p class="grey-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                                                consectetur,
+                                                adipisci sed quia non numquam modi tempora eius.</p> -->
+                </a>
+
+                <a class="col-md-2 m-1 p-1 " onclick="fetchmemberdetails('thayalan')">
+                    <div class="avatar mx-auto">
+                        <!-- <img src="https://raw.githubusercontent.com/ThayalanGR/dotcc/master/assets/img/avatar_2x.png"
+                            style="max-width: 150px; max-height: 150px;" class="rounded-circle z-depth-1" alt="avatar"> -->
+                        <img src="./assets/image/directors/thayalan.jpg" style="max-width: 150px; max-height: 150px;"
+                            class="rounded-circle z-depth-1" alt="avatar">
+                    </div>
+                    <p class="font-weight-normal mt-2 mb-2">ThayalanGR</p>
+                </a>
+                <!-- Grid column -->
+
+                <a class="col-md-2 m-1 p-1 " onclick="fetchmemberdetails('ambarish')">
+                    <div class="avatar mx-auto">
+                        <!-- <img src="https://raw.githubusercontent.com/ThayalanGR/dotcc/master/assets/img/avatar_2x.png"
+                            style="max-width: 150px; max-height: 150px;" class="rounded-circle z-depth-1" alt="avatar"> -->
+                        <img src="./assets/image/directors/ambarish.jpg" style="max-width: 150px; max-height: 150px;"
+                                class="rounded-circle z-depth-1" alt="avatar">
+                    </div>
+                    <p class="font-weight-normal mt-2 mb-2">Ambarish P K</p>
+                </a>
+
+                <a class="col-md-2 m-1 p-1 " onclick="fetchmemberdetails('yogesh')">
+                    <div class="avatar mx-auto">
+                        <!-- <img src="https://raw.githubusercontent.com/ThayalanGR/dotcc/master/assets/img/avatar_2x.png"
+                            style="max-width: 150px; max-height: 150px;" class="rounded-circle z-depth-1" alt="avatar"> -->
+                        <img src="./assets/image/directors/yogesh.jpg" style="max-width: 150px; max-height: 150px;"
+                            class="rounded-circle z-depth-1" alt="avatar">
+                    </div>
+                    <p class="font-weight-normal mt-2 mb-2">V. Yogesh </p>
+                    <!-- <p class="text-uppercase blue-text"><strong>Graphic designer</strong></p> -->
+                    <!-- <p class="grey-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                                            consectetur,
+                                            adipisci sed quia non numquam modi tempora eius.</p> -->
+                </a>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <a class="col-md-2 m-1 p-1 " onclick="fetchmemberdetails('merlin')">
+                    <div class="avatar mx-auto">
+                        <!-- <img src="https://raw.githubusercontent.com/ThayalanGR/dotcc/master/assets/img/avatar_2x.png"
+                            style="max-width: 150px; max-height: 150px;" class="rounded-circle z-depth-1" alt="avatar"> -->
+                        <img src="./assets/image/directors/merlin.jpeg" style="max-width: 150px; max-height: 150px;"
+                            class="rounded-circle z-depth-1" alt="avatar">
+                    </div>
+                    <p class="font-weight-normal mt-2 mb-2">Merlin Selvan</p>
+                    <!-- <p class="text-uppercase blue-text"><strong>Graphic designer</strong></p> -->
+                    <!-- <p class="grey-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                                            consectetur,
+                                            adipisci sed quia non numquam modi tempora eius.</p> -->
+                </a>
+                <!-- Grid column -->
+
+
+            </div>
+            <!-- Grid row -->
+            <hr>
+
+        </div>
+    </div>
+
+
 
     <section class="section block-2 d-flex justify-content-center align-items-center black scrollme" data-section-name="services">
-        <div class="container-fluid mt-5 pt-4" style="z-index: 9;">
+        <div class="container-fluid mt-5 pt-4 m-sm-4 p-sm-4" style="z-index: 9;">
             <div class="row  mt-5 ">
                 <div class="col text-center text-white font-weight-bold " style="z-index: -9999;">
                     <h3 class="font-weight-bold text-warning"> Our Services</h3>
@@ -271,7 +546,7 @@
 
 
     <section data-section-name="technologies" class="section block-3 d-flex  justify-content-center black align-items-center scrollme">
-        <div class="container" style="z-index: 9;">
+        <div class="container mt-5" style="z-index: 9;">
             <div class="row mb-5 pb-2 ">
                 <div class="col text-center">
                     <h3 class=" font-weight-bold text-warning  wow fadeInUp ">Technologies</h3>
@@ -333,20 +608,22 @@
             <div class="row">
                 <div class="col-md-6 col-sm-12 text-primary h5-responsive wow fadeInUp">
                     <i class="fas fa-bullseye text-danger text-center-sm mr-md-2"></i>
-                    <a href="#">Trust for Social Welfare and Rehabilitation Centre</a> <br> <br> <br>
+                    <a href="http://www.tfsdrc.com" target="_blank">Trust for Social Welfare and Rehabilitation Centre</a>
+                    <br> <br> <br>
                     <i class="fas fa-bullseye text-danger mr-md-2"></i>
-                    <a href="#">Vidiyal Liberated Trust.</a> <br> <br> <br>
-                    <i class="fas fa-bullseye text-danger mr-md-2"></i>
-                    <a href="#">Poovanam Trust.</a> <br> <br> <br>
-                    <i class="fas fa-bullseye text-danger mr-md-2"></i>
-                    <a href="#">Aron Matrimony.</a> <br> <br> <br>
-                    <i class="fas fa-bullseye text-danger mr-md-2"></i>
-                    <a href="#">Arul Garments.</a> <br><br> <br>
-                    <i class="fas fa-bullseye text-danger mr-md-2"></i>
-                    <a href="#">Construction Company.</a> <br><br> <br>
-                    <i class="fas fa-bullseye text-danger mr-md-2"></i>
-                    <a href="#">Sankara Nethralaya Research Foundation.</a> <br> <br>
+                    <a href="http://vidiyalliberatedtrust.com/" target="_blank">Vidiyal Liberated Trust.</a> <br> <br>
                     <br>
+                    <i class="fas fa-bullseye text-danger mr-md-2"></i>
+                    <a href="http://www.rettamalaisrinivasan.com" target="_blank">Poovanam Trust.</a> <br> <br> <br>
+                    <i class="fas fa-bullseye text-danger mr-md-2"></i>
+                    <a href="#" target="_blank">Aron Matrimony.</a> <br> <br> <br>
+                    <i class="fas fa-bullseye text-danger mr-md-2"></i>
+                    <a href="#" target="_blank">Arul Garments.</a> <br><br> <br>
+                    <i class="fas fa-bullseye text-danger mr-md-2"></i>
+                    <a href="#" target="_blank">Construction Company.</a> <br><br> <br>
+                    <!-- <i class="fas fa-bullseye text-danger mr-md-2"></i>
+                    <a href="http://www.sankaranethralaya.org/" target="_blank">Sankara Nethralaya Research Foundation.</a> <br> <br>
+                    <br> -->
                 </div>
                 <div class="col-md-6 wow zoomIn " id="project-hide">
                     <i class="fas fa-project-diagram fa-6x text-primary" style="font-size: 400px; opacity:0.5; text-shadow: grey;"></i>
@@ -359,245 +636,6 @@
     </section>
 
 
-    <div class="container-fluid row black scrollme m-0" style="height: 100vh; width: 100vw;">
-        <div class="col d-flex justify-content-center align-items-center flex-column">
-            <div class="row">
-                <div class="col">
-                    <p class="font-weight-bold h3-responsive my-3 mx-auto mb-3 text-warning">Board of Directors </h5><br><br>
-                        <!-- Section description -->
-                    </p>
-                </div>
-            </div>
-            <div class="row d-flex justify-content-center align-items-center wow fadeInUp text-center text-white">
-                <!-- Grid column -->
-                <!-- Grid column -->
-                <a class="col-md-2 " onclick="fetchmemberdetails('punniyamoorthy')">
-                    <div class="avatar mx-auto">
-                        <img src="https://raw.githubusercontent.com/ThayalanGR/dotcc/master/assets/img/avatar_2x.png"
-                            style="max-width: 150px; max-height: 150px;" class="rounded-circle z-depth-1" alt="avatar">
-                    </div>
-                    <p class="font-weight-normal mt-2 mb-2">Dr.M.Punniyamoorthy</p>
-                    <!-- <p class="text-uppercase blue-text"><strong>Graphic designer</strong></p> -->
-                    <!-- <p class="grey-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-                                                    consectetur,
-                                                    adipisci sed quia non numquam modi tempora eius.</p> -->
-                </a>
-                <!-- Grid column -->
-                <!-- Grid column -->
-                <a class="col-md-2 m-1 p-1 " onclick="fetchmemberdetails('ganesh')">
-                    <div class="avatar mx-auto">
-                        <img src="./assets/image/directors/ganesh.jpg" style="max-width: 150px; max-height: 150px;"
-                            class="rounded-circle z-depth-1" alt="avatar">
-                    </div>
-                    <p class="font-weight-normal mt-2 mb-2">Dr. Ganesh</p>
-                    <!-- <p class="text-uppercase blue-text"><strong>Graphic designer</strong></p> -->
-                    <!-- <p class="grey-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-                            consectetur,
-                            adipisci sed quia non numquam modi tempora eius.</p> -->
-                </a>
-                <!-- Grid column -->
-                <!-- Grid column -->
-                <a class="col-md-2 m-1 p-1 " onclick="fetchmemberdetails('michael')">
-                    <div class="avatar mx-auto">
-                        <img src="./assets/image/directors/michael.jpg" style="max-width: 150px; max-height: 150px;"
-                            class="rounded-circle z-depth-1" alt="avatar">
-                    </div>
-                    <p class="font-weight-normal mt-2 mb-2">Dr. Michael Arock </p>
-                    <!-- <p class="text-uppercase blue-text"><strong>Graphic designer</strong></p> -->
-                    <!-- <p class="grey-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-                            consectetur,
-                            adipisci sed quia non numquam modi tempora eius.</p> -->
-                </a>
-                <!-- Grid column -->
-                <!-- Grid column -->
-                <a class="col-md-2 m-1 p-1 " onclick="fetchmemberdetails('vadivel')">
-                    <div class="avatar mx-auto">
-                        <img src="./assets/image/directors/vadivel.jpg" style="max-width: 150px; max-height: 150px;"
-                            class="rounded-circle z-depth-1" alt="avatar">
-                    </div>
-                    <p class="font-weight-normal mt-2 mb-2">Dr. A. Vadivel</p>
-                    <!-- <p class="text-uppercase blue-text"><strong>Graphic designer</strong></p> -->
-                    <!-- <p class="grey-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-                            consectetur,
-                            adipisci sed quia non numquam modi tempora eius.</p> -->
-                </a>
-                <!-- Grid column -->
-                <!-- Grid column -->
-                <a class="col-md-2 m-1 p-1 " onclick="fetchmemberdetails('arthanareeswaran')">
-                    <div class="avatar mx-auto">
-                        <img src="./assets/image/directors/arthanareeswaran.jpg" style="max-width: 150px; max-height: 150px;"
-                            class="rounded-circle z-depth-1" alt="avatar">
-                    </div>
-                    <p class="font-weight-normal mt-2 mb-2">Dr. Arthanareeswaran</p>
-                    <!-- <p class="text-uppercase blue-text"><strong>Graphic designer</strong></p> -->
-                    <!-- <p class="grey-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-                            consectetur,
-                            adipisci sed quia non numquam modi tempora eius.</p> -->
-                </a>
-                <!-- Grid column -->
-                <!-- Grid column -->
-                <a class="col-md-2 m-1 p-1 " onclick="fetchmemberdetails('sumathy')">
-                    <div class="avatar mx-auto">
-                        <img src="./assets/image/directors/sumathy.jpg" style="max-width: 150px; max-height: 150px;"
-                            class="rounded-circle z-depth-1" alt="avatar">
-                    </div>
-                    <p class="font-weight-normal mt-2 mb-2">Dr. Sumathy</p>
-                    <!-- <p class="text-uppercase blue-text"><strong>Graphic designer</strong></p> -->
-                    <!-- <p class="grey-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-                            consectetur,
-                            adipisci sed quia non numquam modi tempora eius.</p> -->
-                </a>
-                <!-- Grid column -->
-                <!-- Grid column -->
-                <a class="col-md-2 m-1 p-1 " onclick="fetchmemberdetails('veerapandian')">
-                    <div class="avatar mx-auto">
-                        <img src="./assets/image/directors/veerapandian.png" style="max-width: 150px; max-height: 150px;"
-                            class="rounded-circle z-depth-1" alt="avatar">
-                    </div>
-                    <p class="font-weight-normal mt-2 mb-2">Dr. Veerapandian</p>
-                    <!-- <p class="text-uppercase blue-text"><strong>Graphic designer</strong></p> -->
-                    <!-- <p class="grey-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-                            consectetur,
-                            adipisci sed quia non numquam modi tempora eius.</p> -->
-                </a>
-                <!-- Grid column -->
-
-                <!-- Grid column -->
-                <a class="col-md-2 m-1 p-1 " onclick="fetchmemberdetails('ilavarasan')">
-                    <div class="avatar mx-auto">
-                        <img src="./assets/image/directors/ilavarasan.jpg" style="max-width: 150px; max-height: 150px;"
-                            class="rounded-circle z-depth-1" alt="avatar">
-                    </div>
-                    <p class="font-weight-normal mt-2 mb-2">Dr. Ilavarasan</p>
-                    <!-- <p class="text-uppercase blue-text"><strong>Graphic designer</strong></p> -->
-                    <!-- <p class="grey-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-                            consectetur,
-                            adipisci sed quia non numquam modi tempora eius.</p> -->
-                </a>
-
-            </div>
-
-
-        </div>
-
-
-
-
-    </div>
-
-    <!-- <section id="careerwithus" class="section block-7"> -->
-    <div class="container-fluid row black scrollme m-0" style="height: 100vh; width: 100vw; ">
-        <div class="col d-flex justify-content-center align-items-center flex-column wow fadeInUp text-white">
-            <!-- Section heading -->
-
-            <div class="row mt-5 pt-4">
-                <div class="col">
-                    <p class="font-weight-bold h3-responsive my-3 mx-auto mb-3 text-warning">Organisation Chart</p>
-
-                </div>
-            </div>
-            <!-- Section description -->
-            <!-- <p class="grey-text w-responsive mx-auto mb-5"></p> -->
-
-            <!-- Grid row -->
-            <div class="row d-flex justify-content-center align-items-center text-center">
-
-                <!-- Grid column -->
-                <!-- Grid column -->
-                <a onclick="fetchmemberdetails('swaminathan')" class="col-12 text-center">
-                    <div class="avatar mx-auto">
-                        <img src="./assets/image/directors/swaminathan.jpg" style="max-width: 150px; max-height: 150px;"
-                            class="rounded-circle z-depth-1" alt="avatar">
-                    </div>
-                    <p class="font-weight-normal mt-2 mb-2">A. Swaminathan</p>
-                    <p class="text-uppercase blue-text"><strong>Founder and CEO</strong></p>
-                    <!-- <p class="grey-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-                                                                    consectetur,
-                                                                    adipisci sed quia non numquam modi tempora eius.</p> -->
-                </a>
-
-
-
-
-                <a class="col-md-2 m-1 p-1 " onclick="fetchmemberdetails('shibil')">
-                    <div class="avatar mx-auto">
-                        <img src="https://raw.githubusercontent.com/ThayalanGR/dotcc/master/assets/img/avatar_2x.png"
-                            style="max-width: 150px; max-height: 150px;" class="rounded-circle z-depth-1" alt="avatar">
-                        <!-- <img src="./assets/image/directors/shibil.jpg" style="max-width: 150px; max-height: 150px;"
-                            class="rounded-circle z-depth-1" alt="avatar"> -->
-                    </div>
-                    <p class="font-weight-normal mt-2 mb-2"> L. S. Shibil Jeyanthi Prasad </p>
-                    <!-- <p class="text-uppercase blue-text"><strong>Graphic designer</strong></p> -->
-                    <!-- <p class="grey-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-                                                consectetur,
-                                                adipisci sed quia non numquam modi tempora eius.</p> -->
-                </a>
-                <!-- Grid column -->
-
-
-                <a class="col-md-2 m-1 p-1 " onclick="fetchmemberdetails('siva')">
-                    <div class="avatar mx-auto">
-                        <img src="https://raw.githubusercontent.com/ThayalanGR/dotcc/master/assets/img/avatar_2x.png"
-                            style="max-width: 150px; max-height: 150px;" class="rounded-circle z-depth-1" alt="avatar">
-                        <!-- <img src="./assets/image/directors/siva.jpg" style="max-width: 150px; max-height: 150px;" class="rounded-circle z-depth-1"
-                            alt="avatar"> -->
-                    </div>
-                    <p class="font-weight-normal mt-2 mb-2">Siva Kumar</p>
-                    <!-- <p class="text-uppercase blue-text"><strong>Graphic designer</strong></p> -->
-                    <!-- <p class="grey-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-                                                consectetur,
-                                                adipisci sed quia non numquam modi tempora eius.</p> -->
-                </a>
-
-                <a class="col-md-2 m-1 p-1 " onclick="fetchmemberdetails('thayalan')">
-                    <div class="avatar mx-auto">
-                        <!-- <img src="https://raw.githubusercontent.com/ThayalanGR/dotcc/master/assets/img/avatar_2x.png"
-                            style="max-width: 150px; max-height: 150px;" class="rounded-circle z-depth-1" alt="avatar"> -->
-                        <img src="./assets/image/directors/thayalan.jpg" style="max-width: 150px; max-height: 150px;"
-                            class="rounded-circle z-depth-1" alt="avatar">
-                    </div>
-                    <p class="font-weight-normal mt-2 mb-2">ThayalanGR</p>
-                </a>
-                <!-- Grid column -->
-
-                <a class="col-md-2 m-1 p-1 " onclick="fetchmemberdetails('yogesh')">
-                    <div class="avatar mx-auto">
-                        <img src="https://raw.githubusercontent.com/ThayalanGR/dotcc/master/assets/img/avatar_2x.png"
-                            style="max-width: 150px; max-height: 150px;" class="rounded-circle z-depth-1" alt="avatar">
-                        <!-- <img src="./assets/image/directors/yogesh.jpg" style="max-width: 150px; max-height: 150px;"
-                            class="rounded-circle z-depth-1" alt="avatar"> -->
-                    </div>
-                    <p class="font-weight-normal mt-2 mb-2">V. Yogesh </p>
-                    <!-- <p class="text-uppercase blue-text"><strong>Graphic designer</strong></p> -->
-                    <!-- <p class="grey-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-                                            consectetur,
-                                            adipisci sed quia non numquam modi tempora eius.</p> -->
-                </a>
-                <!-- Grid column -->
-                <!-- Grid column -->
-                <!-- Grid column -->
-                <a class="col-md-2 m-1 p-1 " onclick="fetchmemberdetails('merlin')">
-                    <div class="avatar mx-auto">
-                        <img src="https://raw.githubusercontent.com/ThayalanGR/dotcc/master/assets/img/avatar_2x.png"
-                            style="max-width: 150px; max-height: 150px;" class="rounded-circle z-depth-1" alt="avatar">
-                        <!-- <img src="./assets/image/directors/merlin.jpg" style="max-width: 150px; max-height: 150px;"
-                            class="rounded-circle z-depth-1" alt="avatar"> -->
-                    </div>
-                    <p class="font-weight-normal mt-2 mb-2">Merlin Selvan</p>
-                    <!-- <p class="text-uppercase blue-text"><strong>Graphic designer</strong></p> -->
-                    <!-- <p class="grey-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-                                            consectetur,
-                                            adipisci sed quia non numquam modi tempora eius.</p> -->
-                </a>
-                <!-- Grid column -->
-
-
-            </div>
-            <!-- Grid row -->
-            <hr>
-
-        </div>
-    </div>
 
 
 
@@ -1001,31 +1039,40 @@
 
         const shibil = new person(`L. S. Shibil Jeyanthi Prasad`,
             `L. S. Shibil Jeyanthi Prasad was born on 18th of July 1990 in Nagercoil, Tamilnadu, India. She pursued her Bachelor of Engineering in Electronics and Communication Engineering from Anna University Chennai, Tamilnadu, India in the year 2012. She pursued her Master of Engineering in Applied Electronics from Anna University in the year 2014. She pursued her Master in Business Administration degree in Human Resources from Manonmaniam Sundranar University Tirunelveli, Tamilnadu India in the year 2016.`,
-            ``, ``)
+            ``, `shibil.jpg`)
 
 
-        const siva = new person(`siva kumar`, ``, ``, ``)
+        const siva = new person(`Siva Kumar`, `Siva Kumar is an android application developer.`,
+            `https://github.com/Sivakumar00`, `siva.jpg`)
 
         const thayalan = new person(`Thayalan G R`, `G .R. Thayalan is a Full Stack Developer.`,
             `https://github.com/ThayalanGR`, `thayalan.jpg`)
 
-        const yogesh = new person(`V. Yogesh `, ``, ``, ``)
+        const ambarish = new person(`Ambarish P K`, `Ambarish P K is a Full Stack Developer.`,
+            `https://github.com/ambarishpk`, `ambarish.jpg`)
 
-        const merlin = new person(`Merlin Selvan`, ``, ``, ``)
+        const yogesh = new person(`V. Yogesh `,
+            `V. Yogesh was born on 6th july 1990 in thanjavur Tamilnadu, India. He pursued her Bachelor of Engineering in Electrical and Electonics Engineering from  Anna University Chennai, Tamilnadu, India in the year 2012. He pursued her Master of Engineering in Power Electronics from Anna University in the year 2016. His area of interest are power electronics, power systems, embedded systems and VLSI.`,
+            ``, `yogesh.jpg`)
+
+        const merlin = new person(`Merlin Selvan`,
+            `G. Merlin selvan was born on 18th August 1990. He pursed his undergraduate degree in bachelors of science (Visual Communication) in the year 2011 at SRM Arts and Science College. His area of interest or image processing, wildlife photography, art and designing.`,
+            ``, `merlin.jpeg`)
 
 
         //board of directors
 
         const vadivel = new person(`Dr. A. Vadivel`, ``, `https://srmap.edu.in/faculty/dr-a-vadivel/`, `vadivel.jpg`)
-        const punniyamoorthy = new person(`Dr.M.Punniyamoorthy`, ``, ``, ``)
+        const punniyamoorthy = new person(`Dr.M.Punniyamoorthy`, ``,
+            `https://www.nitt.edu/home/academics/departments/faculty/punniya.pdf`, `punniyamoorthy.jpg`)
 
         const michael = new person(`Dr. Michael Arock`, ``,
             `https://www.nitt.edu/home/academics/departments/ca/facultymca/assocprofessors/michael/`, `michael.jpg`
         )
-        const arthanareeswaran = new person(`Dr. Arthanareeswaran`, ``,
+        const arthanareeswaran = new person(`Dr. G. Arthanareeswaran`, ``,
             `https://www.nitt.edu/home/academics/departments/chem/chemfaculty/aoprof/arthanaari/`,
             `arthanareeswaran.jpg`)
-        const ganesh = new person(`Dr. Ganesh`, ``, `https://in.linkedin.com/in/koganesh`, `ganesh.jpg`)
+        const ganesh = new person(`Dr. K. Ganesh`, ``, `https://in.linkedin.com/in/koganesh`, `ganesh.jpg`)
         const sumathy = new person(`Dr. Sumathy`, ``,
             `http://www.csbdu.in/index.php/en/multilingual-support/66-p-sumathy`, `sumathy.jpg`)
         const veerapandian = new person(`Dr. Veerapandian`, ``, `http://drvee.in/`, `veerapandian.png`)
@@ -1039,7 +1086,7 @@
 
             const mainRef = document.getElementById("maincontent")
             console.log(eval(name).name)
-            
+
             var avatar = `https://raw.githubusercontent.com/ThayalanGR/dotcc/master/assets/img/avatar_2x.png`
             var image = `assets/image/directors/`
 
