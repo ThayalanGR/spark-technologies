@@ -32,9 +32,6 @@ if(isset($_GET['name'])) {
     //  echo $sql;
 
     if(mysqli_query($DB, $sql)) {
-        $data = array(
-            "status" => true
-        );
         $json = array(  "status" => true);
         echo json_encode($json);
     }
