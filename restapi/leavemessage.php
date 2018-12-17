@@ -6,14 +6,14 @@ require_once('./config/dbconnection.php');
 if(isset($_GET['name'])) {
     $name = $_GET['name'];
     $email = $_GET['email'];
-    $organisation = $_GET['organisation'];
-    $location = $_GET['location'];
-    $contact = $_GET['contact'];
+    $subject = $_GET['organisation'];
+    // $location = $_GET['location'];
+    // $contact = $_GET['contact'];
     $message = $_GET['message'];
     
     // echo $name,$email,$organisation,$location,$contact,$message;
 
-     $sql = "INSERT INTO `tbl_leave_message`(`name`, `email`, `organisation`, `contact`, `location`, `message`) VALUES ('".$name."','".$email."','".$organisation."',".$contact.",'".$location."','".$message."')";
+     $sql = "INSERT INTO `tbl_leave_message`(`name`, `email`, `subject`,`message`) VALUES ('".$name."','".$email."','".$subject."','".$message."')";
 
     //  echo $sql;
 

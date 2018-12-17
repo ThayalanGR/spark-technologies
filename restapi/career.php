@@ -12,8 +12,8 @@ if(isset($_GET['name'])) {
     $fname = $_GET['fname'];
     $sex = $_GET['sex'];
     $date = $_GET['date'];
-    $relegion = $_GET['relegion'];
-    $community = $_GET['community'];
+    $relegion = 'not-specified';
+    $community = 'not-specified';
     $marital = $_GET['marital'];
     $blood = $_GET['blood'];
     $education = $_GET['education'];
